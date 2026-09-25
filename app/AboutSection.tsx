@@ -34,7 +34,9 @@ export default function AboutSection() {
 
             {/* Main Heading: Our Approach to Smart Security */}
             <h2 className="font-onest text-[#111111] text-[28px] sm:text-[34px] md:text-[40px] font-semibold leading-[1.2] md:leading-[50px] mb-5">
-              Our Approach to Smart Security
+              Our Approach to Smart
+              <br />
+              Security
             </h2>
 
             {/* Description Paragraph */}
