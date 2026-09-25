@@ -25,32 +25,37 @@ const steps = [
 
 export default function HowItWorksSection() {
   return (
-    <section className="w-full bg-[#f8f9fa] py-[70px] md:py-[90px] px-4 sm:px-6">
-      <div className="max-w-[1300px] mx-auto">
+    <section className="w-full bg-white py-[70px] md:py-[90px] px-4 sm:px-6">
+      <div className="max-w-[1300px] mx-auto p-[10px]">
         {/* Header */}
-        <div className="text-center max-w-[850px] mx-auto mb-14">
-          <h2 className="font-onest text-[#111111] text-[28px] sm:text-[34px] md:text-[40px] font-semibold leading-[1.2] mb-4">
+        <div className="text-center max-w-[850px] mx-auto mb-10 md:mb-12">
+          <h2 className="font-onest text-[#111111] text-[28px] sm:text-[34px] md:text-[40px] font-semibold leading-[1.2] md:leading-[45px] mb-4">
             How It Works
           </h2>
-          <p className="font-manrope text-[#666666] text-[16px] md:text-[18px] leading-[1.6]">
+          <p className="font-manrope text-[#555555] text-[15px] sm:text-[16px] font-normal leading-[26px] max-w-[780px] mx-auto">
             Van protection at VanLock is easy, smooth, and stress-free. Seeking protection of a single van, or a fleet of several ones, our workflow is tailored towards your convenience.
           </p>
         </div>
 
         {/* 4 Steps Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-[10px]">
           {steps.map((item) => (
             <div
               key={item.step}
-              className="bg-white rounded-[12px] p-7 border border-slate-200/60 shadow-sm flex flex-col justify-start transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+              className="bg-[#E9F7FE] rounded-[20px] py-[30px] px-3 sm:px-4 my-[10px] flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1 h-full"
             >
-              <span className="font-onest text-[36px] font-extrabold text-[#2282c6] mb-4">
+              {/* Step Number: 01., 02., etc. */}
+              <span className="font-jakarta text-[32px] sm:text-[34px] font-[800] text-[#1e83c7] leading-none mb-5 tracking-tight">
                 {item.step}
               </span>
-              <h3 className="font-onest text-[#111111] text-[19px] font-bold mb-3 leading-snug">
+
+              {/* Title */}
+              <h3 className="font-jakarta text-[#1a1a1a] text-[14.5px] xl:text-[16px] font-semibold leading-[1.3] mb-3 whitespace-nowrap">
                 {item.title}
               </h3>
-              <p className="font-manrope text-[#666666] text-[15px] leading-[1.7]">
+
+              {/* Description */}
+              <p className="font-manrope text-[#555555] text-[14.5px] sm:text-[15px] font-[400] leading-[26px]">
                 {item.desc}
               </p>
             </div>

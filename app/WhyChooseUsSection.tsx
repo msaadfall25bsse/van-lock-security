@@ -61,14 +61,14 @@ const features: Feature[] = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="w-full bg-[#fbfbfb] py-[70px] md:py-[90px] px-4 sm:px-6">
-      <div className="max-w-[1300px] mx-auto">
+    <section className="w-full bg-white pt-[90px] pb-[80px] px-4 sm:px-6">
+      <div className="max-w-[1420px] mx-auto">
         {/* Header */}
-        <div className="text-center max-w-[800px] mx-auto mb-14">
-          <p className="font-onest text-[14px] font-semibold text-[#2282c6] uppercase tracking-[2px] mb-3">
+        <div className="text-center max-w-[850px] mx-auto mb-10 md:mb-12">
+          <p className="font-onest text-[14px] font-semibold text-[#2282C6] uppercase tracking-[2px] leading-[14px] mb-3">
             Why Choose Us?
           </p>
-          <h2 className="font-onest text-[#111111] text-[28px] sm:text-[34px] md:text-[40px] font-semibold leading-[1.2] md:leading-[48px]">
+          <h2 className="font-onest text-[#111111] text-[26px] sm:text-[32px] md:text-[40px] font-bold leading-[1.3] md:leading-[55px]">
             Secure, Track &amp; Protect
             <br />
             Bring It All Together
@@ -76,27 +76,30 @@ export default function WhyChooseUsSection() {
         </div>
 
         {/* 8 Feature Boxes: 4 per row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 m-[10px]">
           {features.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-[12px] p-6 sm:p-7 border border-slate-100 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+              className="bg-[#E9F7FE] rounded-[20px] p-[10px] flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1 min-h-[290px]"
             >
-              <div className="relative w-16 h-16 mb-5 flex items-center justify-center">
+              {/* Icon Container */}
+              <div className="w-[52px] h-[52px] mb-4 flex items-center justify-center">
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={64}
-                  height={64}
-                  className="object-contain"
+                  width={52}
+                  height={52}
+                  className="object-contain max-h-[52px] w-auto"
                 />
               </div>
 
-              <h3 className="font-onest text-[#111111] text-[18px] sm:text-[19px] font-bold mb-3 leading-snug">
+              {/* Title */}
+              <h3 className="font-jakarta text-[#111111] text-[17px] font-semibold leading-[1.35] mb-[10px]">
                 {item.title}
               </h3>
 
-              <p className="font-manrope text-[#666666] text-[15px] sm:text-[16px] leading-[1.6]">
+              {/* Description */}
+              <p className="font-manrope text-[#555555] text-[15px] font-normal leading-[27px]">
                 {item.desc}
               </p>
             </div>

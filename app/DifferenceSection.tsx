@@ -32,45 +32,39 @@ const differences: DiffItem[] = [
 
 export default function DifferenceSection() {
   return (
-    <section className="w-full bg-white py-[70px] md:py-[90px] px-4 sm:px-6">
+    <section className="w-full bg-[#E9F7FE] py-[60px] md:py-[80px] lg:py-[90px] px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1300px] mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
-          {/* Left Column: 4 Key Value Points */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center text-left">
-            <h2 className="font-onest text-[#111111] text-[28px] sm:text-[34px] md:text-[40px] font-semibold leading-[1.2] mb-8">
+          {/* Left Column: Title & 4 Text Blocks */}
+          <div className="w-full lg:w-[49%] max-w-[580px] flex flex-col justify-center text-left">
+            <h2 className="font-onest text-[#111111] text-[32px] sm:text-[38px] md:text-[42px] font-semibold leading-[1.15] md:leading-[48px] tracking-[-0.015em] mb-7">
               The Van Lock Difference
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-[21px]">
               {differences.map((item) => (
-                <div key={item.id} className="flex items-start gap-4">
-                  <div className="w-8 h-8 rounded-full bg-[#E9F7FE] text-[#2282c6] flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-onest text-[#111111] text-[18px] sm:text-[19px] font-bold mb-1.5">
-                      {item.title}
-                    </h3>
-                    <p className="font-manrope text-[#666666] text-[15px] sm:text-[16px] leading-[1.6]">
-                      {item.desc}
-                    </p>
-                  </div>
+                <div key={item.id} className="flex flex-col text-left">
+                  <h3 className="font-jakarta text-[#111111] text-[17px] sm:text-[18px] font-semibold leading-[1.3] mb-1.5 tracking-[-0.01em]">
+                    {item.title}
+                  </h3>
+                  <p className="font-manrope text-[#555555] text-[15px] sm:text-[16px] font-normal leading-[25px] sm:leading-[26px]">
+                    {item.desc}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right Column: Original Van Lock Difference Image */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center">
-            <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[480px] rounded-[12px] overflow-hidden shadow-md">
+          {/* Right Column: Van Lock Difference Image */}
+          <div className="w-full lg:w-[52%] flex items-center justify-center">
+            <div className="relative w-full h-[360px] sm:h-[430px] md:h-[480px] lg:h-[500px] rounded-[10px] overflow-hidden">
               <Image
                 src="/difference-side.webp"
                 alt="The Van Lock Difference"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-left lg:object-[left_center]"
+                priority
               />
             </div>
           </div>

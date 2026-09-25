@@ -71,25 +71,25 @@ const vans: VanItem[] = [
 
 export default function PopularVansSection() {
   return (
-    <section className="w-full bg-[#E9F7FE] py-[70px] md:py-[90px] px-4 sm:px-6">
-      <div className="max-w-[1300px] mx-auto">
-        {/* Header row with Title on Left, View All Button on Right */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 md:mb-12">
-          <div>
-            <p className="font-onest text-[14px] font-semibold text-[#2282c6] uppercase tracking-[2px] mb-2.5">
+    <section className="w-full bg-[#E9F7FE] p-[10px] py-[70px] md:py-[90px]">
+      <div className="max-w-[1300px] mx-auto p-[10px]">
+        {/* Header row with Title on Left (50%), View All Button on Right (50%) */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10 md:mb-12">
+          <div className="p-[10px] md:w-1/2">
+            <p className="font-onest text-[14px] font-bold text-[#2282c6] uppercase tracking-[3px] mb-3">
               CHOOSE YOUR VAN
             </p>
-            <h2 className="font-onest text-[#111111] text-[30px] sm:text-[36px] md:text-[40px] font-bold leading-[1.2] md:leading-[50px]">
+            <h2 className="font-onest text-[#111111] text-[32px] sm:text-[38px] md:text-[40px] font-bold leading-[1.2] md:leading-[50px] tracking-[-0.5px]">
               Security Solutions for Popular
               <br />
               Vans
             </h2>
           </div>
 
-          <div>
+          <div className="p-[10px] md:w-1/2 flex justify-start md:justify-end items-center">
             <Link
               href="/choose-your-van"
-              className="font-onest inline-flex items-center gap-2 bg-[#2282c6] hover:bg-[#1a6ea9] text-white text-[16px] font-semibold px-[30px] py-[15px] rounded-[5px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
+              className="font-onest inline-flex items-center gap-2 bg-[#2282c6] hover:bg-[#1a6ea9] text-white text-[15px] font-semibold px-[26px] py-[13px] rounded-[5px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
             >
               <span>View All Vans</span>
               <svg className="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,14 +98,12 @@ export default function PopularVansSection() {
             </Link>
           </div>
         </div>
-
-        {/* 8 Vans Grid: 4 columns on desktop, 2 on tablet, 1 on mobile */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
           {vans.map((van) => (
             <Link
               key={van.id}
               href={van.href}
-              className="group bg-white rounded-[10px] p-5 shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col items-center text-center"
+              className="bg-white rounded-[10px] p-5 shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] flex flex-col items-center text-center"
             >
               <div className="relative w-full h-[180px] mb-3 flex items-center justify-center overflow-hidden">
                 <Image
@@ -113,11 +111,11 @@ export default function PopularVansSection() {
                   alt={`${van.brand} ${van.model}`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain"
                 />
               </div>
 
-              <h3 className="font-jakarta text-[20px] font-bold text-[#111111] mb-1 group-hover:text-[#2282c6] transition-colors leading-tight">
+              <h3 className="font-jakarta text-[20px] font-medium text-[#111111] mb-1 leading-tight">
                 {van.brand}
               </h3>
               <p className="font-jakarta text-[12px] font-medium text-[#666666]">

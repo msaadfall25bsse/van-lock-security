@@ -1,83 +1,98 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="w-full bg-[#111111] text-white pt-16 pb-8 border-t border-white/10">
-      <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
-        
-        {/* 4 Columns Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+    <footer className="w-full relative">
+      {/* Main Top Footer Section */}
+      <div className="w-full bg-[#303030] text-white py-[50px] px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[30.577%_21.024%_25.411%_22.704%] gap-y-10 lg:gap-y-0">
           
-          {/* Col 1: Logo & Bio */}
-          <div>
-            <Link href="/" className="inline-block mb-5">
+          {/* Col 1: Logo, Bio, Social Icons */}
+          <div className="lg:pr-6">
+            <Link href="/" className="inline-block mb-4">
               <Image
-                src="/logo.png"
+                src="https://vanlocksecurity.co.uk/wp-content/uploads/2025/01/Artboard-new-logo.png"
                 alt="VanLock Security"
-                width={170}
-                height={60}
-                className="w-[160px] h-auto object-contain"
+                width={700}
+                height={256}
+                className="w-[180px] sm:w-[200px] h-auto object-contain"
+                priority
               />
             </Link>
-            <p className="font-manrope text-[#999999] text-[15px] leading-[1.7] mb-6">
+            <p className="font-manrope text-[16px] text-white leading-[1.6] mb-6">
               We are specialists in advanced van security solutions. Our systems inspire confidence.
             </p>
-            {/* Social Links */}
-            <div className="flex items-center gap-3">
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-[10px]">
+              {/* Facebook */}
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61576853046703"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#2282c6] text-white flex items-center justify-center transition-colors"
+                className="w-[30px] h-[30px] bg-white rounded-[2px] flex items-center justify-center text-[#2282C6] hover:opacity-90 transition-opacity"
                 aria-label="Facebook"
               >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                <svg className="w-[15px] h-[15px] fill-[#2282C6]" viewBox="0 0 320 512">
+                  <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
                 </svg>
               </a>
+
+              {/* Instagram */}
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/vanlocksecurity?igsh=MXhuYW4zMzZnc3FjMw=="
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#2282c6] text-white flex items-center justify-center transition-colors"
+                className="w-[30px] h-[30px] bg-white rounded-[2px] flex items-center justify-center text-[#2282C6] hover:opacity-90 transition-opacity"
                 aria-label="Instagram"
               >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                <svg className="w-[15px] h-[15px] fill-[#2282C6]" viewBox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                 </svg>
               </a>
+
+              {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/vanlock-security"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#2282c6] text-white flex items-center justify-center transition-colors"
+                className="w-[30px] h-[30px] bg-white rounded-[2px] flex items-center justify-center text-[#2282C6] hover:opacity-90 transition-opacity"
                 aria-label="LinkedIn"
               >
-                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                <svg className="w-[15px] h-[15px] fill-[#2282C6]" viewBox="0 0 448 512">
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                 </svg>
               </a>
             </div>
           </div>
 
           {/* Col 2: Quick Links */}
-          <div>
-            <h4 className="font-onest text-[18px] font-bold text-white mb-5">
+          <div className="lg:pl-[50px]">
+            <h4 className="font-onest text-[22px] font-bold text-white mb-[18px]">
               Quick Links
             </h4>
-            <ul className="space-y-3 font-manrope text-[15px] text-[#aaaaaa]">
-              {["Home", "About Us", "Fleets", "Contact"].map((item) => (
-                <li key={item}>
+            <ul className="space-y-[13px] font-manrope text-[15px] text-white">
+              {[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about-us/" },
+                { label: "Fleets", href: "/fleets/" },
+                { label: "Contact", href: "/contact/" },
+              ].map((item) => (
+                <li key={item.label}>
                   <Link
-                    href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
-                    className="inline-flex items-center gap-2 hover:text-[#2282c6] transition-colors"
+                    href={item.href}
+                    className="inline-flex items-center gap-[9px] hover:text-[#2282C6] transition-colors group"
                   >
-                    <svg className="w-3.5 h-3.5 text-[#2282c6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
-                    </svg>
-                    <span>{item}</span>
+                    <span className="text-[#2282C6] font-bold text-[14px] leading-none select-none">&gt;</span>
+                    <span className="text-white group-hover:text-[#2282C6] transition-colors">{item.label}</span>
                   </Link>
                 </li>
               ))}
@@ -86,28 +101,26 @@ export default function Footer() {
 
           {/* Col 3: Our Services */}
           <div>
-            <h4 className="font-onest text-[18px] font-bold text-white mb-5">
+            <h4 className="font-onest text-[22px] font-bold text-white mb-[18px]">
               Our Services
             </h4>
-            <ul className="space-y-3 font-manrope text-[15px] text-[#aaaaaa]">
+            <ul className="space-y-[13px] font-manrope text-[15px] text-white">
               {[
-                { title: "Van dead locks", href: "/our-services/van-dead-locks/" },
-                { title: "Van hook locks", href: "/our-services/van-hook-locks/" },
-                { title: "Van slam locks", href: "/our-services/van-slam-locks/" },
-                { title: "Van statement lock", href: "/our-services/van-statement-lock/" },
-                { title: "Replacement lock for Ford", href: "/our-services/replacement-lock-for-ford/" },
-                { title: "Repair plate or external shield", href: "/our-services/repair-plate-or-external-shield/" },
-                { title: "Air Vent Installation", href: "/our-services/air-vent-installation/" },
+                { label: "Van Dead Locks", href: "/our-services/van-dead-locks/" },
+                { label: "Van Hook Locks", href: "/our-services/van-hook-locks/" },
+                { label: "Van Slam Locks", href: "/our-services/van-slam-locks/" },
+                { label: "Van Statement Lock", href: "/our-services/van-statement-lock/" },
+                { label: "Replacement Lock For Ford", href: "/our-services/replacement-lock-for-ford/" },
+                { label: "Repair Plate Or External Shield", href: "/our-services/repair-plate-or-external-shield/" },
+                { label: "Air Vent Installation", href: "/our-services/air-vent-installation/" },
               ].map((service) => (
-                <li key={service.title}>
+                <li key={service.label}>
                   <Link
                     href={service.href}
-                    className="inline-flex items-center gap-2 hover:text-[#2282c6] transition-colors"
+                    className="inline-flex items-center gap-[9px] hover:text-[#2282C6] transition-colors group"
                   >
-                    <svg className="w-3.5 h-3.5 text-[#2282c6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
-                    </svg>
-                    <span>{service.title}</span>
+                    <span className="text-[#2282C6] font-bold text-[14px] leading-none select-none">&gt;</span>
+                    <span className="text-white group-hover:text-[#2282C6] transition-colors">{service.label}</span>
                   </Link>
                 </li>
               ))}
@@ -116,52 +129,80 @@ export default function Footer() {
 
           {/* Col 4: Contact Details */}
           <div>
-            <h4 className="font-onest text-[18px] font-bold text-white mb-5">
+            <h4 className="font-onest text-[22px] font-bold text-white mb-[18px]">
               Contact Details
             </h4>
-            <ul className="space-y-4 font-manrope text-[15px] text-[#aaaaaa]">
+            <ul className="space-y-[18px] font-manrope text-[15px] text-white">
               <li>
                 <a
                   href="tel:07367674000"
-                  className="inline-flex items-center gap-3 hover:text-[#2282c6] transition-colors"
+                  className="inline-flex items-center gap-[12px] hover:text-[#2282C6] transition-colors group"
                 >
-                  <svg className="w-5 h-5 text-[#2282c6] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <span>07367674000</span>
+                  {/* Phone Icon */}
+                  <span className="w-[21px] flex-shrink-0 flex items-center justify-center text-[#2282C6]">
+                    <svg className="w-[21px] h-[21px] fill-none stroke-[#2282C6]" viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </span>
+                  <span className="text-white group-hover:text-[#2282C6] transition-colors">07367674000</span>
                 </a>
               </li>
+
               <li>
                 <a
                   href="mailto:info@vanlocksecurity.co.uk"
-                  className="inline-flex items-center gap-3 hover:text-[#2282c6] transition-colors"
+                  className="inline-flex items-center gap-[12px] hover:text-[#2282C6] transition-colors group"
                 >
-                  <svg className="w-5 h-5 text-[#2282c6] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <span>info@vanlocksecurity.co.uk</span>
+                  {/* Mail Icon */}
+                  <span className="w-[21px] flex-shrink-0 flex items-center justify-center text-[#2282C6]">
+                    <svg className="w-[21px] h-[21px] fill-none stroke-[#2282C6]" viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </span>
+                  <span className="text-white group-hover:text-[#2282C6] transition-colors">info@vanlocksecurity.co.uk</span>
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-[#2282c6] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span>Van lock security 594 green lane , Ilford</span>
+
+              <li className="flex items-start gap-[12px]">
+                {/* Location Marker Icon */}
+                <span className="w-[21px] flex-shrink-0 flex items-center justify-center text-[#2282C6] mt-[3px]">
+                  <svg className="w-[21px] h-[21px] fill-none stroke-[#2282C6]" viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span className="text-white leading-[1.4]">
+                  Van lock security 594 green lane<br className="hidden sm:inline" /> , Ilford
+                </span>
               </li>
             </ul>
           </div>
 
         </div>
+      </div>
 
-        {/* Bottom Copyright Row */}
-        <div className="pt-8 text-center">
-          <p className="font-manrope text-[14px] text-[#777777]">
+      {/* Bottom Copyright Bar in #2282C6 */}
+      <div className="w-full bg-[#2282C6] text-white py-[15px] px-4 relative">
+        <div className="max-w-[1300px] mx-auto text-center">
+          <p className="font-onest text-[15px] sm:text-[16px] text-white font-normal">
             Copyright © 2026 VanLock Security | All Rights Reserved
           </p>
         </div>
 
+        {/* Scroll to top arrow on the right side */}
+        <button
+          onClick={scrollToTop}
+          type="button"
+          aria-label="Scroll to top"
+          className="absolute right-4 sm:right-6 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-white/80 p-2 transition-transform hover:-translate-y-[60%] flex items-center justify-center"
+        >
+          <svg className="w-5 h-5 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </button>
       </div>
     </footer>
   );
 }
+
