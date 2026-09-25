@@ -103,7 +103,7 @@ export default function PopularVansSection() {
             <Link
               key={van.id}
               href={van.href}
-              className="bg-white rounded-[10px] p-5 shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] flex flex-col items-center text-center"
+              className="bg-white rounded-[10px] p-5 shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] border border-[#f0f0f0] flex flex-col items-center text-center"
             >
               <div className="relative w-full h-[180px] mb-3 flex items-center justify-center overflow-hidden">
                 <Image

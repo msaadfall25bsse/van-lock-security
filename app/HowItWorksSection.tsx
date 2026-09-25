@@ -42,7 +42,7 @@ export default function HowItWorksSection() {
           {steps.map((item) => (
             <div
               key={item.step}
-              className="bg-[#E9F7FE] rounded-[20px] py-[30px] px-3 sm:px-4 my-[10px] flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1 h-full"
+              className="bg-[#E9F7FE] rounded-[20px] py-[30px] px-3 sm:px-4 my-[10px] flex flex-col items-center text-center h-full"
             >
               {/* Step Number: 01., 02., etc. */}
               <span className="font-jakarta text-[32px] sm:text-[34px] font-[800] text-[#1e83c7] leading-none mb-5 tracking-tight">

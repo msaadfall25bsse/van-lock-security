@@ -72,7 +72,7 @@ export default function ServicesSection() {
             <Link
               key={service.id}
               href={service.href}
-              className="group relative block w-full h-[340px] rounded-[10px] overflow-hidden shadow-sm transition-all duration-300 hover:shadow-xl"
+              className="group relative block w-full h-[340px] rounded-[10px] overflow-hidden"
             >
               {/* Background Image with smooth zoom on hover */}
               <div className="absolute inset-0 w-full h-full overflow-hidden">

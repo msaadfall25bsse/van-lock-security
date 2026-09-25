@@ -80,7 +80,7 @@ export default function WhyChooseUsSection() {
           {features.map((item) => (
             <div
               key={item.id}
-              className="bg-[#E9F7FE] rounded-[20px] p-[10px] flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:-translate-y-1 min-h-[290px]"
+              className="bg-[#E9F7FE] rounded-[20px] p-[10px] flex flex-col items-center text-center min-h-[290px]"
             >
               {/* Icon Container */}
               <div className="w-[52px] h-[52px] mb-4 flex items-center justify-center">

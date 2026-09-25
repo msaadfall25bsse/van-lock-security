@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-[10px] pt-[35px] px-[30px] pb-[25px] flex flex-col justify-between transition-all duration-300 hover:shadow-md h-full"
+              className="bg-white rounded-[10px] pt-[35px] px-[30px] pb-[25px] flex flex-col justify-between h-full"
             >
               <div>
                 {/* 5 Blue Stars */}

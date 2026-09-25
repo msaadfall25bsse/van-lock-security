@@ -36,16 +36,15 @@ export default function EstimateBannerSection() {
         <div className="flex-shrink-0">
           <Link
             href="/contact"
-            className="font-onest inline-flex items-center gap-2.5 bg-[#2282c6] hover:bg-[#1a6ea9] text-white text-[16px] font-semibold px-[30px] py-[12px] rounded-[5px] shadow-md transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
+            className="font-jakarta inline-flex items-center gap-2.5 bg-white hover:bg-gray-100 text-[#2282C6] text-[15px] font-semibold px-[28px] py-[13px] rounded-[5px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
           >
             <span>Get a Quote</span>
             <svg
-              className="w-4 h-4 stroke-[2.5]"
+              className="w-3.5 h-3.5 stroke-[#2282C6] stroke-[2.5]"
               fill="none"
-              stroke="currentColor"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </Link>
         </div>

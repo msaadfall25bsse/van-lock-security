@@ -2,20 +2,20 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface HeaderProps {
+interface WhiteHeaderProps {
   activePath?: string;
 }
 
-export default function Header({ activePath = "/" }: HeaderProps) {
+export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
   return (
-    <header className="w-full absolute top-0 left-0 right-0 z-50 border-b border-white/[0.14] h-[100px] flex items-center">
+    <header className="w-full bg-white shadow-sm border-b border-gray-100 h-[100px] flex items-center relative z-50">
       <div className="w-full max-w-[1300px] mx-auto px-0 h-full flex items-center justify-between">
         
         {/* 1. Column 1: Logo */}
         <div className="flex-1 flex items-center justify-start">
           <Link href="/" className="inline-block transition-opacity hover:opacity-95">
             <Image
-              src="/logo.png"
+              src="/Artboard-1.webp"
               alt="VanLock Security"
               width={160}
               height={58}
@@ -29,12 +29,12 @@ export default function Header({ activePath = "/" }: HeaderProps) {
         {/* 2. Column 2: Navigation Menu */}
         <div className="hidden lg:flex flex-initial items-center justify-center">
           <nav className="flex items-center">
-            <ul className="flex items-center whitespace-nowrap text-[15px] font-medium tracking-normal text-white font-jakarta">
+            <ul className="flex items-center whitespace-nowrap text-[15px] font-medium tracking-normal text-[#000000] font-jakarta">
               <li>
                 <Link
                   href="/"
                   className={`px-3.5 py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
-                    activePath === "/" ? "text-[#2282c6]" : "text-white hover:text-[#2282c6]"
+                    activePath === "/" ? "text-[#2282c6]" : "text-[#000000] hover:text-[#2282c6]"
                   }`}
                 >
                   Home
@@ -44,7 +44,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
                 <Link
                   href="/about-us"
                   className={`px-3.5 py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
-                    activePath === "/about-us" ? "text-[#2282c6]" : "text-white hover:text-[#2282c6]"
+                    activePath === "/about-us" ? "text-[#2282c6]" : "text-[#000000] hover:text-[#2282c6]"
                   }`}
                 >
                   About Us
@@ -55,11 +55,15 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li className="relative group py-6">
                 <Link
                   href="/choose-your-van"
-                  className="px-3.5 py-2 text-white group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
+                  className={`px-3.5 py-2 transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap ${
+                    activePath.startsWith("/ford") || activePath === "/choose-your-van"
+                      ? "text-[#2282c6]"
+                      : "text-[#000000] group-hover:text-[#2282c6]"
+                  }`}
                 >
                   <span>Choose Your Van</span>
                   <svg
-                    className="w-3.5 h-3.5 text-white/90 group-hover:text-[#2282c6] transition-transform duration-200 group-hover:rotate-180 stroke-[2.5]"
+                    className="w-3.5 h-3.5 text-[#000000] group-hover:text-[#2282c6] transition-transform duration-200 group-hover:rotate-180 stroke-[2.5]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -188,7 +192,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
                               ))}
                             </ul>
 
-                            {/* All Manufacturers Button positioned under column 3 exactly as in image */}
+                            {/* All Manufacturers Button positioned under column 3 */}
                             <div className="pt-4 flex justify-start">
                               <Link
                                 href="/choose-your-van/"
@@ -211,11 +215,11 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li className="relative group py-6">
                 <Link
                   href="/our-services"
-                  className="px-3.5 py-2 text-white group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
+                  className="px-3.5 py-2 text-[#000000] group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
                 >
                   <span>Our Services</span>
                   <svg
-                    className="w-3.5 h-3.5 text-white/90 group-hover:text-[#2282c6] transition-transform duration-200 group-hover:rotate-180 stroke-[2.5]"
+                    className="w-3.5 h-3.5 text-[#000000] group-hover:text-[#2282c6] transition-transform duration-200 group-hover:rotate-180 stroke-[2.5]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -251,7 +255,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li>
                 <Link
                   href="/fleets"
-                  className="px-3.5 py-2 text-white hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
+                  className="px-3.5 py-2 text-[#000000] hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
                 >
                   Fleets
                 </Link>
@@ -260,7 +264,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li>
                 <Link
                   href="/contact"
-                  className="px-3.5 py-2 text-white hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
+                  className="px-3.5 py-2 text-[#000000] hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
                 >
                   Contact
                 </Link>
@@ -289,7 +293,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
           {/* Mobile hamburger icon */}
           <button
             type="button"
-            className="lg:hidden p-2 text-white hover:text-white/80 ml-3"
+            className="lg:hidden p-2 text-[#000000] hover:text-gray-700 ml-3"
             aria-label="Toggle navigation menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
