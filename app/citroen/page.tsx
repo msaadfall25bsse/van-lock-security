@@ -86,8 +86,8 @@ export default function CitroenPage() {
             </h2>
           </div>
 
-          {/* 3-Column Responsive Grid (2 rows x 3 columns) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-[1140px] mx-auto">
+          {/* 3-Column Responsive Grid (2 rows x 3 columns) with exactly 20px gap */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] max-w-[1140px] mx-auto">
             {citroenVehicles.map((vehicle, idx) => (
               <Link
                 key={idx}
