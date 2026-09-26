@@ -89,8 +89,8 @@ export default function FiatPage() {
             </h2>
           </div>
 
-          {/* 4-Column Responsive Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* 3-Column Responsive Grid with exactly 20px gap */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] max-w-[1140px] mx-auto">
             {fiatVehicles.map((vehicle, idx) => (
               <Link
                 key={idx}

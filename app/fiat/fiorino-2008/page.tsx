@@ -7,9 +7,9 @@ import TestimonialsSection from "../../TestimonialsSection";
 import EstimateBannerSection from "../../EstimateBannerSection";
 
 export const metadata: Metadata = {
-  title: "Berlingo 2018> - VanLock Security",
+  title: "Fiorino 2008> - VanLock Security",
   description:
-    "Citroen Berlingo 2018> Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Citroen Berlingo 2018>. Call 07367674000.",
+    "Fiat Fiorino 2008> Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Fiat Fiorino 2008>. Call 07367674000.",
 };
 
 const serviceCards = [
@@ -51,23 +51,23 @@ const serviceCards = [
   },
 ];
 
-export default function Berlingo2018Page() {
+export default function Fiorino2008Page() {
   return (
     <div className="min-h-screen bg-white text-[#303030] font-manrope selection:bg-[#2282C6] selection:text-white">
       <WhiteHeader activePath="/choose-your-van" />
 
       <main>
-        {/* SECTION 1: HERO SECTION - Citroen Berlingo 2018> */}
+        {/* SECTION 1: HERO SECTION - Fiat Fiorino 2008> */}
         <section className="bg-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-[1300px] mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
               <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-[20px]">
                 <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#000000] leading-[1.25] lg:leading-[48px] capitalize mb-5">
-                  Citroen Berlingo 2018&gt; Locks And Security Solutions
+                  Fiat Fiorino 2008&gt; Locks<br className="hidden sm:inline" /> And Security Solutions
                 </h1>
 
                 <p className="font-manrope text-[16px] lg:text-[18px] text-[#333333] leading-[28px] lg:leading-[30px] mb-8 font-normal lg:pr-[16%]">
-                  Browse L4V&apos;s range of locks and security solutions for the Citroen Berlingo 2018&gt;.
+                  Browse L4V&apos;s range of locks and security solutions for the Fiat Fiorino 2008&gt;.
                 </p>
 
                 <a
@@ -92,8 +92,8 @@ export default function Berlingo2018Page() {
               <div className="w-full lg:w-1/2 flex items-center justify-center lg:pl-[20px]">
                 <div className="relative w-full max-w-[580px] aspect-[4/3] flex items-center justify-center">
                   <Image
-                    src="/citroen-berlingo-2019.jpeg"
-                    alt="Citroen Berlingo 2018>"
+                    src="/fiat-fiorino-2008.jpeg"
+                    alt="Fiat Fiorino 2008>"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 580px"
@@ -120,11 +120,17 @@ export default function Berlingo2018Page() {
                     Side Door
                   </h3>
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
-                    {/* High: Cross */}
+                    {/* High: Icon */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">High</span>
                       <div className="my-auto py-2">
-                        <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
+                        <Image
+                          src="/Hooklock-Icon.png"
+                          alt="Hooklock"
+                          width={32}
+                          height={46}
+                          className="object-contain h-[44px] w-auto"
+                        />
                       </div>
                       <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
@@ -138,17 +144,11 @@ export default function Berlingo2018Page() {
                       <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
 
-                    {/* Low: Icon */}
+                    {/* Low: Cross */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Low</span>
                       <div className="my-auto py-2">
-                        <Image
-                          src="/Hooklock-Icon.png"
-                          alt="Hooklock"
-                          width={32}
-                          height={46}
-                          className="object-contain h-[44px] w-auto"
-                        />
+                        <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
                       </div>
                       <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
@@ -170,21 +170,13 @@ export default function Berlingo2018Page() {
                       <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
 
-                    {/* Mid: Icon */}
+                    {/* Mid: Cross */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Mid</span>
                       <div className="my-auto py-2">
-                        <Image
-                          src="/Hooklock-Icon.png"
-                          alt="Hooklock"
-                          width={32}
-                          height={46}
-                          className="object-contain h-[44px] w-auto"
-                        />
+                        <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">
-                        (Not suitable for glazed)
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
 
                     {/* Low: Icon */}
