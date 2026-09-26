@@ -147,35 +147,35 @@ export default function VanDeadLocksPage() {
       </section>
 
       {/* Section 2: Key Features & Benefits (Background #E9F7FE, with GHB2-1.jpg on left) */}
-      <section className="bg-[#E9F7FE] py-[60px] sm:py-[80px] lg:py-[100px]">
+      <section className="bg-[#E9F7FE] py-[60px] sm:py-[75px] lg:py-[90px]">
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
             {/* Left Image: GHB2-1.jpg */}
-            <div className="relative w-full h-[320px] sm:h-[400px] lg:h-[420px] rounded-[10px] overflow-hidden flex items-center justify-center order-2 lg:order-1">
+            <div className="relative w-full max-w-[480px] h-[340px] sm:h-[420px] lg:h-[450px] mx-auto lg:mx-0 rounded-[20px] overflow-hidden order-2 lg:order-1 shadow-sm">
               <Image
                 src="/GHB2-1.jpg"
-                alt="Door Lock van"
+                alt="Key Features & Benefits - Van Dead Locks"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain"
+                className="object-cover object-center"
               />
             </div>
 
             {/* Right Content */}
-            <div className="order-1 lg:order-2">
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-4">
+            <div className="order-1 lg:order-2 max-w-[580px]">
+              <h2 className="font-jakarta text-[32px] sm:text-[35px] font-bold text-[#000000] leading-[1.2] mb-5 tracking-tight">
                 Key Features &amp; Benefits
               </h2>
-              <p className="font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[26px] mb-6">
+              <p className="font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px] mb-6">
                 Van Dead Locks offer unmatched mechanical security by adding an independent, high-security locking point to your van doors.
               </p>
 
-              {/* Bullet list with custom blue dots */}
-              <ul className="space-y-3.5">
+              {/* Bullet list with custom blue dots matching real site */}
+              <ul className="space-y-4">
                 {keyFeatures.map((feat, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-3 h-3 rounded-full bg-[#2282C6] mt-2"></span>
-                    <span className="font-manrope text-[15px] text-[#333333] leading-[24px]">
+                  <li key={idx} className="flex items-start gap-3.5">
+                    <span className="flex-shrink-0 w-2 h-2 rounded-full bg-[#2282C6] mt-2.5"></span>
+                    <span className="font-manrope text-[15px] sm:text-[15.5px] text-[#2d3748] leading-[25px]">
                       {feat}
                     </span>
                   </li>
