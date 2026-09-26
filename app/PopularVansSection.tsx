@@ -115,7 +115,7 @@ export default function PopularVansSection() {
                 />
               </div>
 
-              <h3 className="font-jakarta text-[20px] font-medium text-[#111111] mb-1 leading-tight">
+              <h3 className="font-onest text-[20px] font-medium text-[#111111] mb-1 leading-tight">
                 {van.brand}
               </h3>
               <p className="font-jakarta text-[12px] font-medium text-[#666666]">

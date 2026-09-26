@@ -118,7 +118,7 @@ export default function VanDeadLocksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="max-w-[560px]">
-              <h2 className="font-jakarta text-[35px] font-bold text-[#000000] leading-[42px] tracking-[-0.02em] mb-6">
+              <h2 className="font-onest text-[35px] font-bold text-[#000000] leading-[42px] tracking-[-0.02em] mb-6">
                 Secure Your Van With Heavy-Duty<br />DeadLocks
               </h2>
               <div className="space-y-4 font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px]">
@@ -163,7 +163,7 @@ export default function VanDeadLocksPage() {
 
             {/* Right Content */}
             <div className="order-1 lg:order-2 max-w-[580px]">
-              <h2 className="font-jakarta text-[32px] sm:text-[35px] font-bold text-[#000000] leading-[1.2] mb-5 tracking-tight">
+              <h2 className="font-onest text-[32px] sm:text-[35px] font-bold text-[#000000] leading-[1.2] mb-5 tracking-tight">
                 Key Features &amp; Benefits
               </h2>
               <p className="font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px] mb-6">
@@ -202,7 +202,7 @@ export default function VanDeadLocksPage() {
         />
         <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <h2 className="font-jakarta text-white text-[26px] sm:text-[32px] lg:text-[36px] font-bold leading-tight mb-2">
+            <h2 className="font-onest text-white text-[26px] sm:text-[32px] lg:text-[36px] font-bold leading-tight mb-2">
               Protect Your Van — Upgrade Now!
             </h2>
             <p className="font-manrope text-white/90 text-[15px] sm:text-[16px]">
@@ -280,7 +280,7 @@ export default function VanDeadLocksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             {/* Left Column: Heading and short summary */}
             <div>
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
                 Frequently Asked Question
               </h2>
               <p className="font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[26px]">

@@ -61,7 +61,7 @@ export default function MaxusPage() {
             <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
               PLEASE SELECT YOUR VEHICLE BELOW.
             </p>
-            <h2 className="font-jakarta text-[30px] sm:text-[38px] lg:text-[44px] font-bold text-[#050B20] tracking-tight">
+            <h2 className="font-onest text-[30px] sm:text-[38px] lg:text-[44px] font-bold text-[#050B20] tracking-tight">
               Security Solutions For Maxus
             </h2>
           </div>
@@ -82,7 +82,7 @@ export default function MaxusPage() {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="font-jakarta font-semibold text-[17px] text-[#111111] group-hover:text-[#2282C6] transition-colors mb-1">
+                  <h3 className="font-onest font-semibold text-[17px] text-[#111111] group-hover:text-[#2282C6] transition-colors mb-1">
                     {vehicle.name}
                   </h3>
                   {vehicle.subtitle && (

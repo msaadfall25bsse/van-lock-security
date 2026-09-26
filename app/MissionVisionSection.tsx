@@ -8,7 +8,7 @@ export default function MissionVisionSection() {
       <div className="max-w-[1240px] mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-[850px] mx-auto mb-10 md:mb-12">
-          <h2 className="font-jakarta text-[#111111] text-[40px] font-bold leading-[1.25] tracking-tight">
+          <h2 className="font-onest text-[#111111] text-[40px] font-bold leading-[1.25] tracking-tight">
             Secure, Track &amp; Protect
             <br />
             Bring It All Together
@@ -19,7 +19,7 @@ export default function MissionVisionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full">
           {/* Mission Card */}
           <div className="bg-[#e8f6fd] rounded-[20px] p-8 md:p-10 flex flex-col items-center text-center justify-start transition-all duration-300">
-            <h3 className="font-jakarta text-[#111111] text-[22px] md:text-[24px] font-bold mb-5 tracking-tight">
+            <h3 className="font-onest text-[#111111] text-[22px] md:text-[24px] font-bold mb-5 tracking-tight">
               Our Mission
             </h3>
             <p className="font-manrope text-[#334155] text-[15px] sm:text-[16px] leading-[1.7] max-w-[500px]">
@@ -29,7 +29,7 @@ export default function MissionVisionSection() {
 
           {/* Vision Card */}
           <div className="bg-[#e8f6fd] rounded-[20px] p-8 md:p-10 flex flex-col items-center text-center justify-start transition-all duration-300">
-            <h3 className="font-jakarta text-[#111111] text-[22px] md:text-[24px] font-bold mb-5 tracking-tight">
+            <h3 className="font-onest text-[#111111] text-[22px] md:text-[24px] font-bold mb-5 tracking-tight">
               Our Vision
             </h3>
             <p className="font-manrope text-[#334155] text-[15px] sm:text-[16px] leading-[1.7] max-w-[500px]">

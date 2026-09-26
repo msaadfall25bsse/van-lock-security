@@ -98,7 +98,7 @@ export default function FleetsPage() {
               <p className="font-onest text-[14px] sm:text-[15px] font-bold text-[#2282C6] tracking-[2px] uppercase mb-2">
                 PROTECT WHAT DRIVES YOUR BUSINESS
               </p>
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-6">
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-6">
                 Fleet Security Solutions
               </h2>
               <div className="space-y-4 font-manrope text-[15px] text-[#555555] leading-[26px]">
@@ -149,7 +149,7 @@ export default function FleetsPage() {
               <p className="font-onest text-[14px] sm:text-[15px] font-bold text-[#2282C6] tracking-[2px] uppercase mb-2">
                 SMART SECURITY SMART INVESTMENT
               </p>
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
                 Benefits to Your Business
               </h2>
               <p className="font-manrope text-[15px] text-[#555555] leading-[26px] mb-8">
@@ -164,7 +164,7 @@ export default function FleetsPage() {
                       {item.icon}
                     </div>
                     <div>
-                      <h3 className="font-jakarta text-[19px] sm:text-[20px] font-bold text-[#050B20] leading-snug tracking-tight">
+                      <h3 className="font-onest text-[19px] sm:text-[20px] font-bold text-[#050B20] leading-snug tracking-tight">
                         {item.title}
                       </h3>
                       <p className="font-manrope text-[15px] sm:text-[16px] text-[#4a5568] leading-relaxed mt-0.5">

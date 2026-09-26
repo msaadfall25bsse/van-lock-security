@@ -50,7 +50,7 @@ export default function HowItWorksSection() {
               </span>
 
               {/* Title */}
-              <h3 className="font-jakarta text-[#1a1a1a] text-[14.5px] xl:text-[16px] font-semibold leading-[1.3] mb-3 whitespace-nowrap">
+              <h3 className="font-onest text-[#1a1a1a] text-[14.5px] xl:text-[16px] font-semibold leading-[1.3] mb-3 whitespace-nowrap">
                 {item.title}
               </h3>
 

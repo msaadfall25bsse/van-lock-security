@@ -74,7 +74,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
                     
                     {/* Left Sub-box: Popular Vans (36.134% width, #E9F7FE bg & rounded-10px) */}
                     <div className="bg-[#E9F7FE] rounded-[10px] p-[20px] mr-[30px] flex flex-col justify-start">
-                      <h4 className="font-jakarta text-[18px] font-bold text-[#000000] mb-[18px] leading-[18px]">
+                      <h4 className="font-onest text-[18px] font-bold text-[#000000] mb-[18px] leading-[18px]">
                         Popular Vans
                       </h4>
                       <ul className="space-y-[14px] font-manrope text-[15px] font-medium">
@@ -106,7 +106,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
                     {/* Right Sub-box: Choose by Manufacturer (3 Columns + All Manufacturers button) */}
                     <div className="flex flex-col justify-between py-1">
                       <div>
-                        <h4 className="font-jakarta text-[18px] font-bold text-[#000000] mb-[18px] leading-[18px]">
+                        <h4 className="font-onest text-[18px] font-bold text-[#000000] mb-[18px] leading-[18px]">
                           Choose by Manufacturer
                         </h4>
                         

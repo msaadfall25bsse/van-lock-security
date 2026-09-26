@@ -44,7 +44,7 @@ export default function ContactPage() {
               <p className="font-onest text-[14px] sm:text-[15px] font-bold text-[#2282C6] tracking-[2px] uppercase mb-2">
                 CONTACT US
               </p>
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
                 Get in Touch With Us
               </h2>
               <p className="font-manrope text-[15px] text-[#555555] leading-[26px] mb-8">
@@ -61,7 +61,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-jakarta text-[16px] font-bold text-[#050B20] mb-1">
+                    <h3 className="font-onest text-[16px] font-bold text-[#050B20] mb-1">
                       Phone No
                     </h3>
                     <a
@@ -81,7 +81,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-jakarta text-[16px] font-bold text-[#050B20] mb-1">
+                    <h3 className="font-onest text-[16px] font-bold text-[#050B20] mb-1">
                       Email
                     </h3>
                     <a
@@ -101,7 +101,7 @@ export default function ContactPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-jakarta text-[16px] font-bold text-[#050B20] mb-1">
+                    <h3 className="font-onest text-[16px] font-bold text-[#050B20] mb-1">
                       Address
                     </h3>
                     <p className="font-manrope text-[15px] text-[#555555] leading-relaxed">
@@ -114,7 +114,7 @@ export default function ContactPage() {
 
             {/* Right Column: Message Us Form */}
             <div className="bg-[#E9F7FE] rounded-[15px] p-8 sm:p-10 border border-[#d6ecf9]">
-              <h2 className="font-jakarta text-[24px] sm:text-[28px] font-bold text-[#050B20] mb-6">
+              <h2 className="font-onest text-[24px] sm:text-[28px] font-bold text-[#050B20] mb-6">
                 Message us
               </h2>
               <form className="space-y-4">

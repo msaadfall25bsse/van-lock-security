@@ -40,7 +40,7 @@ export default function HeroSection() {
             className="w-full lg:w-1/2 p-[10px] flex flex-col justify-center text-left"
           >
             {/* Heading: Safe. Smart. With Van Lock Security, */}
-            <h1 className="font-jakarta text-white text-[45px] sm:text-[45px] md:text-[45px] lg:text-[45px] font-bold leading-[1.18] tracking-tight mb-6">
+            <h1 className="font-onest text-white text-[45px] sm:text-[45px] md:text-[45px] lg:text-[45px] font-bold leading-[1.18] tracking-tight mb-6">
               Safe. Smart. With Van Lock
               <br />
               Security,

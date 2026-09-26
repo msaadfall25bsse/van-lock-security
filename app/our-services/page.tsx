@@ -110,7 +110,7 @@ export default function OurServicesPage() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-jakarta font-bold text-[20px] sm:text-[22px] text-[#050B20] mb-3 leading-snug">
+                <h3 className="font-onest font-bold text-[20px] sm:text-[22px] text-[#050B20] mb-3 leading-snug">
                   {service.title}
                 </h3>
 

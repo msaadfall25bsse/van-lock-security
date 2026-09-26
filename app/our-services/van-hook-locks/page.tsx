@@ -80,7 +80,7 @@ export default function VanHookLocksPage() {
               <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
                 ANTI-PEEL PROTECTION
               </p>
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-tight mb-6">
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-tight mb-6">
                 Reinforced Security with Hook Lock Systems
               </h2>
               <p className="font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[28px] mb-8">
@@ -104,7 +104,7 @@ export default function VanHookLocksPage() {
             <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
               SUPERIOR ENGINEERING
             </p>
-            <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20]">
+            <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20]">
               Key Features &amp; Benefits
             </h2>
           </div>
@@ -132,7 +132,7 @@ export default function VanHookLocksPage() {
       {/* CTA Strip */}
       <section className="bg-gradient-to-r from-[#2282C6] to-[#0A4A7A] py-12 text-white text-center">
         <div className="max-w-[900px] mx-auto px-4">
-          <h2 className="font-jakarta text-[26px] sm:text-[32px] font-bold mb-4">
+          <h2 className="font-onest text-[26px] sm:text-[32px] font-bold mb-4">
             Protect Your Van — Upgrade Now!
           </h2>
           <p className="font-manrope text-[16px] text-white/90 mb-6">
@@ -157,7 +157,7 @@ export default function VanHookLocksPage() {
             <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
               FREQUENTLY ASKED
             </p>
-            <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20]">
+            <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20]">
               Frequently Asked Questions
             </h2>
           </div>

@@ -66,7 +66,7 @@ export default function VWTransporterT612020Page() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
               {/* Container 1: Text Container (Left Column, margin-right: 20px) */}
               <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-[20px]">
-                <h1 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#000000] leading-[1.2] tracking-[-0.5px] capitalize mb-5">
+                <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#000000] leading-[1.2] tracking-[-0.5px] capitalize mb-5">
                   VW Transporter T6.1 2020&gt; Locks<br className="hidden sm:inline" /> And Security Solutions
                 </h1>
 
@@ -118,7 +118,7 @@ export default function VWTransporterT612020Page() {
         <section className="bg-white py-10 px-4 sm:px-6 lg:px-8">
           <div className="max-w-[1240px] mx-auto">
             {/* Section Heading */}
-            <h2 className="font-jakarta text-[26px] sm:text-[30px] lg:text-[34px] font-bold text-[#050B20] text-center mb-8 tracking-tight">
+            <h2 className="font-onest text-[26px] sm:text-[30px] lg:text-[34px] font-bold text-[#050B20] text-center mb-8 tracking-tight">
               Hooklock/Deadlock Fitting Positions Available
             </h2>
 
@@ -128,7 +128,7 @@ export default function VWTransporterT612020Page() {
                 
                 {/* Left Half: Side Door */}
                 <div className="flex flex-col items-center lg:pr-8">
-                  <h3 className="font-jakarta text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
+                  <h3 className="font-onest text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
                     Side Door
                   </h3>
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
@@ -181,7 +181,7 @@ export default function VWTransporterT612020Page() {
 
                 {/* Right Half: Barn Doors */}
                 <div className="flex flex-col items-center lg:pl-8">
-                  <h3 className="font-jakarta text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
+                  <h3 className="font-onest text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
                     Barn Doors
                   </h3>
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
@@ -266,7 +266,7 @@ export default function VWTransporterT612020Page() {
                   </div>
 
                   {/* Card Title */}
-                  <h3 className="font-jakarta text-[19px] sm:text-[22px] font-bold text-[#000000] leading-[22px] capitalize mb-[15px] pt-[10px]">
+                  <h3 className="font-onest text-[19px] sm:text-[22px] font-bold text-[#000000] leading-[22px] capitalize mb-[15px] pt-[10px]">
                     {card.title}
                   </h3>
 

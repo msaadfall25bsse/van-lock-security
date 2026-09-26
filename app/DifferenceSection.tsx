@@ -44,7 +44,7 @@ export default function DifferenceSection() {
             <div className="space-y-[21px]">
               {differences.map((item) => (
                 <div key={item.id} className="flex flex-col text-left">
-                  <h3 className="font-jakarta text-[#111111] text-[17px] sm:text-[18px] font-semibold leading-[1.3] mb-1.5 tracking-[-0.01em]">
+                  <h3 className="font-onest text-[#111111] text-[17px] sm:text-[18px] font-semibold leading-[1.3] mb-1.5 tracking-[-0.01em]">
                     {item.title}
                   </h3>
                   <p className="font-manrope text-[#555555] text-[15px] sm:text-[16px] font-normal leading-[25px] sm:leading-[26px]">

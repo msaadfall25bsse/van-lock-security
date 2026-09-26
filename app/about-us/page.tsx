@@ -71,7 +71,7 @@ export default function AboutUsPage() {
               </span>
 
               {/* Main Heading */}
-              <h2 className="font-jakarta text-[#0d131f] text-[26px] sm:text-[32px] lg:text-[35px] font-semibold leading-[1.2] tracking-normal mb-4 pr-[10px]">
+              <h2 className="font-onest text-[#0d131f] text-[26px] sm:text-[32px] lg:text-[35px] font-semibold leading-[1.2] tracking-normal mb-4 pr-[10px]">
                 Secure, Track &amp; Protect – Bring It All Together
               </h2>
 

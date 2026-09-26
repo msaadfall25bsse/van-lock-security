@@ -94,7 +94,7 @@ export default function WhyChooseUsSection() {
               </div>
 
               {/* Title */}
-              <h3 className="font-jakarta text-[#111111] text-[17px] font-semibold leading-[1.35] mb-[10px]">
+              <h3 className="font-onest text-[#111111] text-[17px] font-semibold leading-[1.35] mb-[10px]">
                 {item.title}
               </h3>
 
