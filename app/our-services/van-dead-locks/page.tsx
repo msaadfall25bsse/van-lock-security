@@ -112,16 +112,16 @@ export default function VanDeadLocksPage() {
         </div>
       </section>
 
-      {/* Section 1: Overview (Secure Your Van with Heavy-Duty DeadLocks) */}
-      <section className="bg-white py-[60px] sm:py-[80px] lg:py-[100px]">
+      {/* Section 1: Overview (Secure Your Van With Heavy-Duty DeadLocks) */}
+      <section className="bg-white py-[60px] sm:py-[75px] lg:py-[90px]">
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div>
-              <h2 className="font-jakarta text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-6">
-                Secure Your Van with Heavy-Duty DeadLocks
+            <div className="max-w-[560px]">
+              <h2 className="font-jakarta text-[32px] sm:text-[36px] lg:text-[40px] font-bold text-[#050B20] leading-[1.2] mb-6 tracking-tight">
+                Secure Your Van With Heavy-Duty DeadLocks
               </h2>
-              <div className="space-y-5 font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[28px]">
+              <div className="space-y-4 font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px]">
                 <p>
                   Dead locks are mechanical locks designed to work independently of your vehicle’s existing locking system. Using a straight bolt, typically between 2 and 5 cm in length, they secure the door by engaging with the body of the van. Only operated by a high-security key, they provide an additional layer of security for your van and its contents. Installation kits are specific to the make and model of van, making them easy to install, and they come with all the parts you need.
                 </p>
@@ -132,13 +132,13 @@ export default function VanDeadLocksPage() {
             </div>
 
             {/* Right Image */}
-            <div className="relative w-full h-[360px] sm:h-[450px] lg:h-[500px] rounded-[10px] overflow-hidden flex items-center justify-center">
+            <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[460px] rounded-[20px] overflow-hidden">
               <Image
                 src="/veihcle-deadlocks-1.jpeg"
-                alt="Van Dead Locks"
+                alt="Secure Your Van With Heavy-Duty DeadLocks"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-contain"
+                className="object-cover object-center"
                 priority
               />
             </div>
