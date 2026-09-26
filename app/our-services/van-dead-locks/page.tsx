@@ -281,7 +281,7 @@ export default function VanDeadLocksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             {/* Left Column: Heading and short summary */}
             <div>
-              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-[1.25] mb-5">
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[35px] font-semibold text-[#050B20] leading-[1.25] mb-5">
                 Frequently Asked Question
               </h2>
               <p className="font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[26px]">
