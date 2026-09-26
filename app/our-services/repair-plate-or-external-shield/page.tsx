@@ -9,35 +9,86 @@ import Footer from '../../Footer';
 export const metadata: Metadata = {
   title: 'Repair Plate or External Shield - VanLock Security',
   description:
-    'Reinforce Damaged or Vulnerable Van Doors. Repair plates and external shields cover break-in damage and protect critical lock mechanisms from future attacks.',
+    'Reinforce Damaged or Vulnerable Van Doors. A high-security replacement for your existing lock, addressing the known vulnerabilities in your old factory locks.',
 };
 
-const features = [
-  'Covers Vulnerable Areas – Especially door handles, locks, and surrounding metal skins.',
-  'Reinforces Weak Points – Adds an impenetrable second layer of high-grade steel protection.',
-  'Cleans Up Break-In Damage – Neatly conceals holes and damage, restoring your van’s clean appearance.',
-  'Cost-Effective Solution – Avoids expensive full door shell replacements after an attack.',
-  'Custom Fit for Vans – Precision engineered for various commercial vehicle makes and models.',
+const keyFeatures = [
+  'Covers Vulnerable Areas – Especially handles, locks, and panels.',
+  'Reinforces Weak Points – Adds a second layer of steel protection.',
+  'Cleans Up Break-In Damage – Makes your van look new again.',
+  'Quick Installation – No need to replace entire door sections.',
+  'Custom Fit for Vans – Designed for various makes and models.',
+];
+
+const comparisonHeaders = [
+  'Features',
+  'Dead Lock',
+  'Hook Lock',
+  'Slam Lock',
+  'Slam Handle',
+  'Statement Lock',
+  'Ford Replacement',
+  'Shield Plate',
+];
+
+const comparisonRows = [
+  {
+    feature: 'Operated independently of your van’s locking system',
+    values: ['✖', '✖', '–', '–', '✖', '✖', '✖'],
+  },
+  {
+    feature: 'Mechanical, key-operated lock, offering reliable, hands-on security',
+    values: ['✖', '✖', '✖', '✖', '–', '✖', '–'],
+  },
+  {
+    feature: 'Automatically secures the door every time it closes',
+    values: ['–', '–', '✖', '✖', '–', '–', '–'],
+  },
+  {
+    feature: 'Designed for fast, low-impact installation using van-specific kits',
+    values: ['✖', '✖', '✖', '✖', '✖', '✖', '✖'],
+  },
+  {
+    feature: 'Maintains your van’s original appearance',
+    values: ['✖', '✖', '✖', '✖', '–', '✖', '–'],
+  },
+  {
+    feature: 'Ideal for tradespeople, couriers, and fleet operators',
+    values: ['✖', '✖', '✖', '✖', '✖', '✖', '✖'],
+  },
+  {
+    feature: 'Custom keying options available — perfect for fleets or multiple vans',
+    values: ['✖', '✖', '✖', '–', '–', '–', '–'],
+  },
+  {
+    feature: 'Provides a deterrent, as well as additional physical security',
+    values: ['✖', '✖', '–', '–', '✖', '–', '✖'],
+  },
+  {
+    feature: 'Gives you passive defence without needing any driver interaction',
+    values: ['–', '–', '–', '–', '–', '–', '✖'],
+  },
 ];
 
 const faqs = [
   {
     q: 'Is the shield visible?',
-    a: 'It is discreet yet noticeable enough to act as an effective visual deterrent against would-be thieves.',
+    a: 'It is discreet but visible enough to serve as a deterrent.',
   },
   {
     q: 'Can it be color-matched to my van?',
-    a: 'Yes, select shields come in powder-coated black, stainless steel, or can be painted to match your van body color.',
+    a: 'Some shields come in paintable or color options.',
   },
   {
     q: 'Will this fix existing damage?',
-    a: 'Yes, repair plates are specifically designed to cover puncture or pry damage around handles and locks while restoring full security.',
+    a: 'It covers and protects the area, improving function and appearance.',
   },
 ];
 
 export default function RepairPlateOrExternalShieldPage() {
   return (
     <main className="min-h-screen bg-white font-sans text-[#111111] overflow-x-hidden flex flex-col">
+      {/* Header */}
       <Header activePath="/our-services" />
 
       {/* Hero Banner */}
@@ -60,110 +111,195 @@ export default function RepairPlateOrExternalShieldPage() {
         </div>
       </section>
 
-      {/* Overview Section */}
-      <section className="bg-white py-[60px] sm:py-[80px] lg:py-[100px] border-b border-[#f0f0f0]">
+      {/* Section 1: Overview */}
+      <section className="bg-white py-[60px] sm:py-[75px] lg:py-[90px]">
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Image */}
-            <div className="relative w-full h-[320px] sm:h-[400px] rounded-[10px] overflow-hidden shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] border border-[#f0f0f0]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Content */}
+            <div className="max-w-[560px]">
+              <h2 className="font-onest text-[35px] font-bold text-[#000000] leading-[42px] tracking-[-0.02em] mb-6">
+                Reinforce Damaged or<br />Vulnerable Van Doors
+              </h2>
+              <div className="space-y-4 font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px]">
+                <p>
+                  A high-security replacement for your existing lock, our replacement locks address the known vulnerabilities in your old, original manufacturer, locks.
+                </p>
+                <p>
+                  A like-for-like replacement, the installation is quick and easy, without changing your van’s appearance. Hardening your van’s pre-existing locks, they are the easiest way to enhance its security.
+                </p>
+                <p>
+                  Repair Plates and External Shields protect your van’s skin from puncture attacks around door latches and cover up existing damage neatly, eliminating the need for expensive bodyshop repairs.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative w-full h-[340px] sm:h-[440px] lg:h-[460px] rounded-[20px] overflow-hidden">
               <Image
-                src="/repair-plate-hero.jpg"
-                alt="Repair Plate or External Shield"
+                src="/gtrake4znmidpl75qhg9x02cof1u.jpg"
+                alt="Reinforce Damaged or Vulnerable Van Doors"
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2: Key Features & Benefits */}
+      <section className="bg-[#E9F7FE] py-[60px] sm:py-[75px] lg:py-[90px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+            {/* Left Image */}
+            <div className="relative w-full max-w-[560px] h-[380px] sm:h-[480px] lg:h-[530px] mx-auto lg:mx-0 rounded-[24px] overflow-hidden order-2 lg:order-1 shadow-[0px_4px_25px_rgba(0,0,0,0.06)]">
+              <Image
+                src="/TomBowmanLtd-SecurityplateFordCustomrear2.jpeg"
+                alt="Key Features & Benefits - Repair Plate or External Shield"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center"
+                priority
               />
             </div>
 
-            {/* Right Text */}
-            <div>
-              <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
-                BODYWORK REINFORCEMENT
-              </p>
-              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20] leading-tight mb-6">
-                Reinforce Damaged or Vulnerable Van Doors
+            {/* Right Content */}
+            <div className="order-1 lg:order-2 max-w-[580px]">
+              <h2 className="font-onest text-[32px] sm:text-[35px] font-bold text-[#000000] leading-[1.2] mb-5 tracking-tight">
+                Key Features &amp; Benefits
               </h2>
-              <p className="font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[28px] mb-8">
-                If your van has been attacked or you want to prevent one, Repair Plates and External Shields are a simple but powerful defense. Thieves often target the thin sheet metal around handles and internal locking rods. Our stainless steel repair plates shield these critical points from being punctured or levered, keeping your cargo safe.
+              <p className="font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px] mb-6">
+                Repair plates and external shields provide heavy gauge stainless steel protection over vulnerable lock mechanisms and existing break-in damage.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-[#2282C6] hover:bg-[#1a6ea8] text-white font-manrope font-semibold text-[15px] px-8 py-[14px] rounded-[5px] transition-colors shadow-sm"
-              >
-                Get a Shield Quote
-              </Link>
+
+              {/* Bullet list with custom blue dots matching real site */}
+              <ul className="space-y-4">
+                {keyFeatures.map((feat, idx) => (
+                  <li key={idx} className="flex items-start gap-3.5">
+                    <span className="flex-shrink-0 w-2 h-2 rounded-full bg-[#2282C6] mt-2.5"></span>
+                    <span className="font-manrope text-[15px] sm:text-[15.5px] text-[#2d3748] leading-[25px]">
+                      {feat}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Features & Benefits */}
-      <section className="bg-[#FCFCFC] py-[60px] sm:py-[80px] lg:py-[100px] border-b border-[#f0f0f0]">
-        <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
-              PROVEN RESISTANCE
-            </p>
-            <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20]">
-              Key Features &amp; Benefits
+      {/* Section 3: Call to Action Strip */}
+      <section
+        className="relative overflow-hidden py-[40px] md:py-[70px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('/main-banner-images.jpg')`,
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, rgba(34, 130, 198, 0.92) 0%, rgba(0, 0, 0, 0.87) 100%)',
+          }}
+        />
+        <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="w-full md:w-auto text-left">
+            <h2 className="font-onest text-white text-[26px] md:text-[40px] font-bold leading-[35px] md:leading-[50px] mb-2 tracking-tight">
+              Repair &amp; Protect Your Van — All in One Step.
             </h2>
+            <p className="font-manrope text-white text-[16px] md:text-[18px] leading-[26px] md:leading-[32px] md:mr-[24%]">
+              Cover puncture marks and strengthen your doors with heavy-duty stainless steel shield plates.
+            </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feat, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-6 rounded-[10px] shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] border border-[#f0f0f0] flex items-start gap-4"
-              >
-                <div className="w-8 h-8 rounded-full bg-[#EBF6FC] text-[#2282C6] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <p className="font-manrope text-[15px] text-[#333333] leading-[24px]">
-                  {feat}
-                </p>
-              </div>
-            ))}
+          <div className="flex-shrink-0">
+            <a
+              href="tel:07446898025"
+              className="inline-flex items-center gap-[9px] bg-[#2282C6] hover:bg-[#1a6ea9] text-white font-onest text-[18px] font-semibold px-[30px] py-[15px] rounded-[5px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
+            >
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
+              </svg>
+              <span>+44 07446898025</span>
+            </a>
           </div>
         </div>
       </section>
 
-      {/* CTA Strip */}
-      <section className="bg-gradient-to-r from-[#2282C6] to-[#0A4A7A] py-12 text-white text-center">
-        <div className="max-w-[900px] mx-auto px-4">
-          <h2 className="font-onest text-[26px] sm:text-[32px] font-bold mb-4">
-            Repair &amp; Protect Your Van — All in One Step
-          </h2>
-          <p className="font-manrope text-[16px] text-white/90 mb-6">
-            Conceal damage and stop repeat break-in attempts with our heavy-duty repair plates.
-          </p>
-          <a
-            href="tel:07367674000"
-            className="inline-flex items-center justify-center bg-white text-[#2282C6] hover:bg-gray-100 font-manrope font-bold text-[16px] px-8 py-3.5 rounded-[5px] transition-colors"
-          >
-            Call Us: 07367674000
-          </a>
-        </div>
-      </section>
-
-      {/* Testimonials */}
+      {/* Section 4: Testimonials */}
       <TestimonialsSection />
 
-      {/* FAQ Section */}
-      <section className="bg-white py-[60px] sm:py-[80px] lg:py-[100px]">
-        <div className="max-w-[900px] mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
-              FREQUENTLY ASKED
-            </p>
-            <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-bold text-[#050B20]">
-              Frequently Asked Questions
-            </h2>
+      {/* Section 5: Comparison Table */}
+      <section className="bg-white py-[60px] sm:py-[80px] lg:py-[100px] border-b border-[#f0f0f0]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="overflow-x-auto shadow-[0px_4px_25px_rgba(0,0,0,0.06)] rounded-[8px] border border-[#e5e5e5]">
+            <table className="w-full text-left border-collapse min-w-[900px]">
+              <thead>
+                <tr className="bg-[#2282C6] text-white">
+                  {comparisonHeaders.map((head, i) => (
+                    <th
+                      key={i}
+                      className={`py-4 px-4 font-jakarta text-[14px] sm:text-[15px] font-bold ${
+                        i === 0 ? 'text-left pl-6 w-[34%]' : 'text-center border-l border-white/20'
+                      }`}
+                    >
+                      {head}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#e5e5e5] font-manrope text-[14px]">
+                {comparisonRows.map((row, idx) => (
+                  <tr
+                    key={idx}
+                    className={idx % 2 === 0 ? 'bg-white' : 'bg-[#F9FBFC]'}
+                  >
+                    <td className="py-4 px-4 pl-6 text-[#333333] font-medium leading-relaxed">
+                      {row.feature}
+                    </td>
+                    {row.values.map((val, cellIdx) => (
+                      <td
+                        key={cellIdx}
+                        className={`py-4 px-4 text-center font-bold border-l border-[#e5e5e5] ${
+                          val === '✖'
+                            ? 'text-[#2282C6] text-[16px]'
+                            : 'text-[#888888] text-[18px]'
+                        }`}
+                      >
+                        {val}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-          <ServiceFaqAccordion faqs={faqs} />
         </div>
       </section>
 
+      {/* Section 6: Frequently Asked Questions (2 Column Layout) */}
+      <section className="bg-white py-[60px] sm:py-[80px] lg:py-[100px]">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            {/* Left Column: Heading and short summary */}
+            <div>
+              <h2 className="font-onest text-[28px] sm:text-[34px] lg:text-[35px] font-semibold text-[#050B20] leading-[1.25] mb-5">
+                Frequently Asked Question
+              </h2>
+              <p className="font-manrope text-[15px] sm:text-[16px] text-[#555555] leading-[26px]">
+                If your van has been attacked or you want to prevent one, Repair Plates and External Shields are a simple but powerful defense.
+              </p>
+            </div>
+
+            {/* Right Column: Interactive Accordion */}
+            <div>
+              <ServiceFaqAccordion faqs={faqs} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
       <Footer />
     </main>
   );
