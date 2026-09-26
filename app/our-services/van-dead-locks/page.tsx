@@ -151,13 +151,14 @@ export default function VanDeadLocksPage() {
         <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
             {/* Left Image: GHB2-1.jpg */}
-            <div className="relative w-full max-w-[480px] h-[340px] sm:h-[420px] lg:h-[450px] mx-auto lg:mx-0 rounded-[20px] overflow-hidden order-2 lg:order-1 shadow-sm">
+            <div className="relative w-full max-w-[560px] h-[380px] sm:h-[480px] lg:h-[530px] mx-auto lg:mx-0 rounded-[24px] overflow-hidden order-2 lg:order-1 shadow-[0px_4px_25px_rgba(0,0,0,0.06)]">
               <Image
                 src="/GHB2-1.jpg"
                 alt="Key Features & Benefits - Van Dead Locks"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
+                priority
               />
             </div>
 
