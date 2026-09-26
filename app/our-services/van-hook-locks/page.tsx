@@ -188,7 +188,7 @@ export default function VanHookLocksPage() {
 
       {/* Section 3: Call to Action Strip (Protect Your Van — Upgrade Now!) */}
       <section
-        className="relative overflow-hidden py-[75px] sm:py-[95px] lg:py-[110px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
+        className="relative overflow-hidden py-[56px] sm:py-[72px] lg:py-[82px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
         style={{
           backgroundImage: `url('/main-banner-images.jpg')`,
         }}
