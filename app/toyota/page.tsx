@@ -1,0 +1,117 @@
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import WhiteHeader from '../WhiteHeader';
+import EstimateBannerSection from '../EstimateBannerSection';
+import TestimonialsSection from '../TestimonialsSection';
+import Footer from '../Footer';
+
+export const metadata: Metadata = {
+  title: 'TOYOTA - VanLock Security',
+  description: 'Toyota vans are known for their durability, reliability, and smart engineering. Designed to handle both personal and commercial use, they offer spacious interiors, fuel efficiency, and advanced safety features. Please select your vehicle below. Security solutions for Toyota',
+};
+
+const toyotaVehicles = [
+  {
+    name: 'Proace 2013-2016',
+    slug: '/toyota/proace-2013-2016/',
+    image: '/Toyota-Proace-2013-2016-175261f2.jpeg',
+  },
+  {
+    name: 'Proace 2016>',
+    slug: '/toyota/proace-2016/',
+    image: '/Toyota-Proace-2016-dfd0c3ea.jpeg',
+    subtitle: 'Also Includes Electric & Hybrid Variants',
+  },
+  {
+    name: 'Proace City 2020>',
+    slug: '/toyota/proace-city-2020/',
+    image: '/Toyota_Proace_City_2020-0bb34637.jpeg',
+    subtitle: 'Also Includes Electric & Hybrid Variants',
+  },
+  {
+    name: 'Corolla 2023>',
+    slug: '/toyota/corolla-2023/',
+    image: '/toyota-corolla-23-a820c559.jpeg',
+    subtitle: 'Also Includes Electric & Hybrid Variants',
+  },
+  {
+    name: 'Hilux 2015>',
+    slug: '/toyota/hilux-2015/',
+    image: '/Toyota_Hilux-ecc812c0.jpeg',
+  },
+];
+
+export default function ToyotaPage() {
+  return (
+    <main className="min-h-screen bg-white font-sans text-[#111111] overflow-x-hidden">
+      <WhiteHeader activePath="/choose-your-van" />
+
+      {/* Top Banner / Hero Section */}
+      <section className="bg-[#EBF6FC] pt-14 pb-16 sm:pt-16 sm:pb-20">
+        <div className="max-w-[850px] mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
+          <div className="relative w-[180px] h-[95px] sm:w-[210px] sm:h-[105px] mb-6">
+            <Image
+              src="/toyota-hero-logo.png"
+              alt="Toyota Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+
+          <p className="font-manrope text-[15px] sm:text-[17px] text-[#2b2b2b] leading-[26px] sm:leading-[28px] max-w-[760px]">
+            Toyota vans are known for their durability, reliability, and smart engineering. Designed to handle both personal and commercial use, they offer spacious interiors, fuel efficiency, and advanced safety features.
+          </p>
+        </div>
+      </section>
+
+      {/* Vehicles Grid Section */}
+      <section className="bg-white pt-14 pb-20 sm:pt-16 sm:pb-24">
+        <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-14">
+            <p className="font-manrope text-[#2282C6] font-bold text-[13px] sm:text-[14px] tracking-[0.14em] uppercase mb-2">
+              PLEASE SELECT YOUR VEHICLE BELOW.
+            </p>
+            <h2 className="font-jakarta text-[30px] sm:text-[38px] lg:text-[44px] font-bold text-[#050B20] tracking-tight">
+              Security Solutions For Toyota
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {toyotaVehicles.map((vehicle, idx) => (
+              <Link
+                key={idx}
+                href={vehicle.slug}
+                className="group block bg-white rounded-[10px] p-5 shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] border border-[#f0f0f0] transition-colors duration-200"
+              >
+                <div className="relative w-full h-[180px] mb-4 flex items-center justify-center overflow-hidden">
+                  <Image
+                    src={vehicle.image}
+                    alt={vehicle.name}
+                    fill
+                    className="object-contain p-2"
+                  />
+                </div>
+                <div className="text-center">
+                  <h3 className="font-jakarta font-semibold text-[17px] text-[#111111] group-hover:text-[#2282C6] transition-colors mb-1">
+                    {vehicle.name}
+                  </h3>
+                  {vehicle.subtitle && (
+                    <p className="font-manrope text-[13px] text-[#2282C6] font-medium leading-snug">
+                      {vehicle.subtitle}
+                    </p>
+                  )}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <EstimateBannerSection />
+      <TestimonialsSection />
+      <Footer />
+    </main>
+  );
+}
