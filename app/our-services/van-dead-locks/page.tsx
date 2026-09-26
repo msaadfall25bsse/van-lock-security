@@ -118,7 +118,7 @@ export default function VanDeadLocksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="max-w-[560px]">
-              <h2 className="font-jakarta text-[30px] sm:text-[36px] lg:text-[40px] font-bold text-[#000000] leading-[1.2] mb-6">
+              <h2 className="font-jakarta text-[35px] font-bold text-[#000000] leading-[42px] tracking-[-0.02em] mb-6">
                 Secure Your Van With Heavy-Duty<br />DeadLocks
               </h2>
               <div className="space-y-4 font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px]">
