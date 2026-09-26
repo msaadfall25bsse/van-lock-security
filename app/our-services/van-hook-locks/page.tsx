@@ -188,7 +188,7 @@ export default function VanHookLocksPage() {
 
       {/* Section 3: Call to Action Strip (Protect Your Van — Upgrade Now!) */}
       <section
-        className="relative overflow-hidden py-[90px] sm:py-[110px] lg:py-[125px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
+        className="relative overflow-hidden py-[56px] sm:py-[72px] lg:py-[82px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
         style={{
           backgroundImage: `url('/main-banner-images.jpg')`,
         }}
@@ -201,18 +201,18 @@ export default function VanHookLocksPage() {
           }}
         />
         <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="max-w-[480px]">
-            <h2 className="font-onest text-white text-[32px] sm:text-[38px] lg:text-[42px] font-bold leading-[1.15] mb-3 tracking-tight">
+          <div className="max-w-[620px]">
+            <h2 className="font-onest text-white text-[30px] sm:text-[36px] lg:text-[42px] font-bold leading-[1.2] mb-3.5 tracking-tight">
               Protect Your Van — Upgrade Now!
             </h2>
-            <p className="font-manrope text-white/95 text-[15px] sm:text-[16px] leading-[26px]">
+            <p className="font-manrope text-white/95 text-[15px] sm:text-[16px] leading-[24px]">
               Don’t leave your tools and livelihood at risk. Secure your van with our premium Dead Locks.
             </p>
           </div>
           <div className="flex-shrink-0">
             <a
               href="tel:07446898025"
-              className="inline-flex items-center gap-2 bg-[#2282C6] hover:bg-[#1a6ea9] text-white font-jakarta font-semibold text-[15px] px-6 py-3.5 rounded-[4px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
+              className="inline-flex items-center gap-2.5 bg-[#2282C6] hover:bg-[#1a6ea9] text-white font-jakarta font-semibold text-[16px] px-8 py-4 rounded-[6px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
