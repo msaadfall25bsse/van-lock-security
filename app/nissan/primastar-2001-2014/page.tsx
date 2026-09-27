@@ -7,9 +7,9 @@ import TestimonialsSection from "../../TestimonialsSection";
 import EstimateBannerSection from "../../EstimateBannerSection";
 
 export const metadata: Metadata = {
-  title: "Trafic 2014> - VanLock Security",
+  title: "Primastar 2001-2014 - VanLock Security",
   description:
-    "Renault Trafic 2014> Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Renault Trafic 2014>. Call 07367674000.",
+    "Nissan Primastar 2001-2014 Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Nissan Primastar 2001-2014. Call 07367674000.",
 };
 
 const serviceCards = [
@@ -63,11 +63,11 @@ export default function ModelPage() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
               <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-[20px]">
                 <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#000000] leading-[1.25] lg:leading-[48px] capitalize mb-5">
-                  Renault Trafic 2014&gt; Locks And Security Solutions
+                  Nissan Primastar 2001-2014 Locks And Security Solutions
                 </h1>
 
                 <p className="font-manrope text-[16px] lg:text-[18px] text-[#333333] leading-[28px] lg:leading-[30px] mb-8 font-normal lg:pr-[16%]">
-                  Browse L4V&apos;s range of locks and security solutions for the Renault Trafic 2014&gt;.
+                  Browse L4V&apos;s range of locks and security solutions for the Nissan Primastar 2001-2014.
                 </p>
 
                 <a
@@ -92,8 +92,8 @@ export default function ModelPage() {
               <div className="w-full lg:w-1/2 flex items-center justify-center lg:pl-[20px]">
                 <div className="relative w-full max-w-[580px] aspect-[4/3] flex items-center justify-center">
                   <Image
-                    src="/Renault_Trafic_2014-b95f8e55-1.jpeg"
-                    alt="Renault Trafic 2014&gt; Locks And Security Solutions"
+                    src="/Nissan-Primastar-2001-d5d28972.jpeg"
+                    alt="Nissan Primastar 2001-2014 Locks And Security Solutions"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 580px"
@@ -186,7 +186,7 @@ export default function ModelPage() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Not suitable for glazed)</span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Low roof only)</span>
                     </div>
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Low</span>

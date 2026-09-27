@@ -51,35 +51,24 @@ const serviceCards = [
   },
 ];
 
-export default function VauxhallVivaro2019Page() {
+export default function ModelPage() {
   return (
     <div className="min-h-screen bg-white text-[#303030] font-manrope selection:bg-[#2282C6] selection:text-white">
-      {/* Light/White Header specifically for inner content pages */}
       <WhiteHeader activePath="/choose-your-van" />
 
       <main>
-        {/* ========================================================================= */}
-        {/* SECTION 1: HERO SECTION - Vauxhall Vivaro 2019>                           */}
-        {/* ========================================================================= */}
+        {/* SECTION 1: HERO SECTION */}
         <section className="bg-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-[1300px] mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
-              {/* Container 1: Text Container (Left Column, margin-right: 20px) */}
               <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-[20px]">
-                <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#000000] leading-[1.25] lg:leading-[48px] capitalize mb-2">
-                  Vauxhall Vivaro 2019&gt; Locks<br className="hidden sm:inline" /> And Security Solutions
+                <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#000000] leading-[1.25] lg:leading-[48px] capitalize mb-5">
+                  Vauxhall Vivaro 2019&gt; Locks And Security Solutions
                 </h1>
 
-                {/* Specific Subtitle for Vivaro */}
-                <h2 className="font-onest text-[18px] sm:text-[20px] font-semibold text-[#2282C6] mb-5">
-                  Also Includes Electric &amp; Hybrid Variants
-                </h2>
-
-                <div className="font-manrope text-[16px] lg:text-[18px] text-[#333333] leading-[28px] lg:leading-[30px] mb-8 font-normal lg:pr-[16%]">
-                  <p>
-                    Browse L4V&apos;s range of locks and security solutions for the Vauxhall Vivaro 2019&gt;
-                  </p>
-                </div>
+                <p className="font-manrope text-[16px] lg:text-[18px] text-[#333333] leading-[28px] lg:leading-[30px] mb-8 font-normal lg:pr-[16%]">
+                  Browse L4V&apos;s range of locks and security solutions for the Vauxhall Vivaro 2019&gt;.
+                </p>
 
                 <a
                   href="tel:07367674000"
@@ -100,12 +89,11 @@ export default function VauxhallVivaro2019Page() {
                 </a>
               </div>
 
-              {/* Container 2: Image Container (Right Column, margin-left: 20px) */}
               <div className="w-full lg:w-1/2 flex items-center justify-center lg:pl-[20px]">
                 <div className="relative w-full max-w-[580px] aspect-[4/3] flex items-center justify-center">
                   <Image
-                    src="/Vauxhall-Vivaro-2019-d190905d-1-1.png"
-                    alt="Vauxhall Vivaro 2019>"
+                    src="/Vauxhall-Vivaro-2019-d190905d-1.png"
+                    alt="Vauxhall Vivaro 2019&gt; Locks And Security Solutions"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 580px"
@@ -117,27 +105,21 @@ export default function VauxhallVivaro2019Page() {
           </div>
         </section>
 
-        {/* ========================================================================= */}
-        {/* SECTION 2: Hooklock/Deadlock fitting positions available                  */}
-        {/* ========================================================================= */}
+        {/* SECTION 2: Hooklock/Deadlock fitting positions available */}
         <section className="bg-white py-10 px-4 sm:px-6 lg:px-8">
           <div className="max-w-[1240px] mx-auto">
-            {/* Section Heading */}
             <h2 className="font-onest text-[26px] sm:text-[30px] lg:text-[34px] font-bold text-[#050B20] text-center mb-8 tracking-tight">
               Hooklock/Deadlock Fitting Positions Available
             </h2>
 
-            {/* Unified Light Blue Card Container (No external margins) */}
             <div className="bg-[#EBF7FD] rounded-[16px] p-6 sm:p-8 border border-[#D8EFFC]">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 lg:divide-x lg:divide-gray-200/80">
-                
                 {/* Left Half: Side Door */}
                 <div className="flex flex-col items-center lg:pr-8">
                   <h3 className="font-onest text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
                     Side Door
                   </h3>
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
-                    {/* High */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">High</span>
                       <div className="my-auto py-2">
@@ -149,23 +131,15 @@ export default function VauxhallVivaro2019Page() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">
-                        -
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
-
-                    {/* Mid */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Mid</span>
                       <div className="my-auto py-2">
                         <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">
-                        -
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
-
-                    {/* Low */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Low</span>
                       <div className="my-auto py-2">
@@ -177,9 +151,7 @@ export default function VauxhallVivaro2019Page() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">
-                        (Suitable for SWB only)
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Suitable for SWB only)</span>
                     </div>
                   </div>
                 </div>
@@ -190,7 +162,6 @@ export default function VauxhallVivaro2019Page() {
                     Barn Doors
                   </h3>
                   <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
-                    {/* High */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">High</span>
                       <div className="my-auto py-2">
@@ -202,12 +173,8 @@ export default function VauxhallVivaro2019Page() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">
-                        -
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
-
-                    {/* Mid */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Mid</span>
                       <div className="my-auto py-2">
@@ -219,12 +186,8 @@ export default function VauxhallVivaro2019Page() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">
-                        (Suitable for glazed)
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Suitable for glazed)</span>
                     </div>
-
-                    {/* Low */}
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Low</span>
                       <div className="my-auto py-2">
@@ -236,21 +199,16 @@ export default function VauxhallVivaro2019Page() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">
-                        -
-                      </span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
         </section>
 
-        {/* ========================================================================= */}
-        {/* SECTION 3: 6 Security Service Cards Grid                                  */}
-        {/* ========================================================================= */}
+        {/* SECTION 3: 6 Security Service Cards Grid */}
         <section className="bg-white py-10 lg:py-14 px-4 sm:px-6 lg:px-8">
           <div className="max-w-[1300px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
@@ -259,7 +217,6 @@ export default function VauxhallVivaro2019Page() {
                   key={card.title}
                   className="bg-white rounded-[10px] p-[30px] flex flex-col items-center text-center shadow-[0px_0px_71px_0px_rgba(0,0,0,0.05)] border border-[#f0f0f0]"
                 >
-                  {/* Lock Hardware Image */}
                   <div className="w-[100px] h-[100px] relative mb-[15px] flex items-center justify-center">
                     <Image
                       src={card.img}
@@ -270,17 +227,14 @@ export default function VauxhallVivaro2019Page() {
                     />
                   </div>
 
-                  {/* Card Title */}
                   <h3 className="font-onest text-[19px] sm:text-[22px] font-bold text-[#000000] leading-[22px] capitalize mb-[15px] pt-[10px]">
                     {card.title}
                   </h3>
 
-                  {/* Card Description */}
                   <p className="font-jakarta text-[16px] text-[#333333] leading-[28px] mb-[15px] flex-grow max-w-[340px]">
                     {card.desc}
                   </p>
 
-                  {/* Text Link */}
                   <Link
                     href={card.href}
                     className="inline-flex items-center gap-2 font-manrope font-semibold text-[16px] text-[#2282C6] hover:text-[#050B20] transition-colors mt-auto group"
@@ -294,18 +248,10 @@ export default function VauxhallVivaro2019Page() {
           </div>
         </section>
 
-        {/* ========================================================================= */}
-        {/* SECTION 4: Reusable Estimate Banner Component                             */}
-        {/* ========================================================================= */}
         <EstimateBannerSection />
-
-        {/* ========================================================================= */}
-        {/* SECTION 5: Testimonials Section                                           */}
-        {/* ========================================================================= */}
         <TestimonialsSection />
       </main>
 
-      {/* Global Footer */}
       <Footer />
     </div>
   );

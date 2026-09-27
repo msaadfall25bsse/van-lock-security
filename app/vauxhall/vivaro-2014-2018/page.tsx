@@ -7,9 +7,9 @@ import TestimonialsSection from "../../TestimonialsSection";
 import EstimateBannerSection from "../../EstimateBannerSection";
 
 export const metadata: Metadata = {
-  title: "Trafic 2014> - VanLock Security",
+  title: "Vivaro 2014-2018 - VanLock Security",
   description:
-    "Renault Trafic 2014> Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Renault Trafic 2014>. Call 07367674000.",
+    "Vauxhall Vivaro 2014-2018 Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Vauxhall Vivaro 2014-2018. Call 07367674000.",
 };
 
 const serviceCards = [
@@ -63,11 +63,11 @@ export default function ModelPage() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
               <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-[20px]">
                 <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#000000] leading-[1.25] lg:leading-[48px] capitalize mb-5">
-                  Renault Trafic 2014&gt; Locks And Security Solutions
+                  Vauxhall Vivaro 2014-2018 Locks And Security Solutions
                 </h1>
 
                 <p className="font-manrope text-[16px] lg:text-[18px] text-[#333333] leading-[28px] lg:leading-[30px] mb-8 font-normal lg:pr-[16%]">
-                  Browse L4V&apos;s range of locks and security solutions for the Renault Trafic 2014&gt;.
+                  Browse L4V&apos;s range of locks and security solutions for the Vauxhall Vivaro 2014-2018.
                 </p>
 
                 <a
@@ -92,8 +92,8 @@ export default function ModelPage() {
               <div className="w-full lg:w-1/2 flex items-center justify-center lg:pl-[20px]">
                 <div className="relative w-full max-w-[580px] aspect-[4/3] flex items-center justify-center">
                   <Image
-                    src="/Renault_Trafic_2014-b95f8e55-1.jpeg"
-                    alt="Renault Trafic 2014&gt; Locks And Security Solutions"
+                    src="/Vauxhall-Vivaro-2014-0fef85b8.jpeg"
+                    alt="Vauxhall Vivaro 2014-2018 Locks And Security Solutions"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 580px"
