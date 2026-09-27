@@ -99,7 +99,7 @@ export default function AirVentInstallationPage() {
       <section className="relative overflow-hidden w-full bg-[#111111] pt-[150px] pb-[70px] sm:pt-[180px] sm:pb-[100px] lg:pt-[200px] lg:pb-[130px] flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-          style={{ backgroundImage: `url('/blog-deadlock.webp')` }}
+          style={{ backgroundImage: `url('/WhatsApp-Image-2025-05-17-at-16.42.19_0298bc6f.jpg')` }}
         />
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
