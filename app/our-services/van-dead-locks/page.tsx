@@ -260,7 +260,7 @@ export default function VanDeadLocksPage() {
                         key={cellIdx}
                         className={`py-4 px-4 text-center font-bold border-l border-[#e5e5e5] ${
                           val === '✖'
-                            ? 'text-[#2282C6] text-[16px]'
+                            ? 'text-[#222222] text-[16px]'
                             : 'text-[#888888] text-[18px]'
                         }`}
                       >
