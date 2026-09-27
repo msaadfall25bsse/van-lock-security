@@ -7,9 +7,9 @@ import TestimonialsSection from "../../TestimonialsSection";
 import EstimateBannerSection from "../../EstimateBannerSection";
 
 export const metadata: Metadata = {
-  title: "Custom 2023> - VanLock Security",
+  title: "Connect 2024> - VanLock Security",
   description:
-    "Ford Custom 2023> Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Ford Custom 2023>. Call 07367674000.",
+    "Ford Connect 2024> Locks and Security Solutions. Browse L4V's range of locks and security solutions for the Ford Connect 2024>. Call 07367674000.",
 };
 
 const serviceCards = [
@@ -63,11 +63,11 @@ export default function FordModelPage() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-10">
               <div className="w-full lg:w-1/2 flex flex-col items-start justify-center lg:pr-[20px]">
                 <h1 className="font-onest text-[28px] sm:text-[34px] lg:text-[38px] font-semibold text-[#000000] leading-[1.25] lg:leading-[48px] capitalize mb-5">
-                  Ford Custom 2023&gt; Locks And Security Solutions
+                  Ford Connect 2024&gt; Locks And Security Solutions
                 </h1>
 
                 <p className="font-manrope text-[16px] lg:text-[18px] text-[#333333] leading-[28px] lg:leading-[30px] mb-8 font-normal lg:pr-[16%]">
-                  Browse L4V&apos;s range of locks and security solutions for the Ford Custom 2023&gt;.
+                  Browse L4V&apos;s range of locks and security solutions for the Ford Connect 2024&gt;.
                 </p>
 
                 <a
@@ -92,8 +92,8 @@ export default function FordModelPage() {
               <div className="w-full lg:w-1/2 flex items-center justify-center lg:pl-[20px]">
                 <div className="relative w-full max-w-[580px] aspect-[4/3] flex items-center justify-center">
                   <Image
-                    src="/ford-custom-2023.png"
-                    alt="Ford Custom 2023&gt; Locks And Security Solutions"
+                    src="/ford-connect-2024.webp"
+                    alt="Ford Connect 2024&gt; Locks And Security Solutions"
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 580px"
@@ -131,7 +131,37 @@ export default function FordModelPage() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Not suitable for glazed)</span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
+                    </div>
+                    <div className="flex flex-col items-center justify-between min-h-[140px]">
+                      <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Mid</span>
+                      <div className="my-auto py-2">
+                        <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
+                      </div>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
+                    </div>
+                    <div className="flex flex-col items-center justify-between min-h-[140px]">
+                      <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Low</span>
+                      <div className="my-auto py-2">
+                        <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
+                      </div>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Half: Barn Doors */}
+                <div className="flex flex-col items-center lg:pl-8">
+                  <h3 className="font-onest text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
+                    Barn Doors
+                  </h3>
+                  <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
+                    <div className="flex flex-col items-center justify-between min-h-[140px]">
+                      <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">High</span>
+                      <div className="my-auto py-2">
+                        <span className="text-[26px] text-[#222222] font-normal leading-none select-none">✕</span>
+                      </div>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
                     <div className="flex flex-col items-center justify-between min-h-[140px]">
                       <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Mid</span>
@@ -151,55 +181,7 @@ export default function FordModelPage() {
                           className="object-contain h-[44px] w-auto"
                         />
                       </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Suitable for glazed)</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right Half: Barn Doors */}
-                <div className="flex flex-col items-center lg:pl-8">
-                  <h3 className="font-onest text-[22px] sm:text-[24px] font-bold text-[#050B20] mb-8 text-center">
-                    Barn Doors
-                  </h3>
-                  <div className="grid grid-cols-3 gap-2 sm:gap-4 w-full text-center">
-                    <div className="flex flex-col items-center justify-between min-h-[140px]">
-                      <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">High</span>
-                      <div className="my-auto py-2">
-                        <Image
-                          src="/Hooklock-Icon.png"
-                          alt="Hooklock"
-                          width={32}
-                          height={46}
-                          className="object-contain h-[44px] w-auto"
-                        />
-                      </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Not suitable for glazed)</span>
-                    </div>
-                    <div className="flex flex-col items-center justify-between min-h-[140px]">
-                      <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Mid</span>
-                      <div className="my-auto py-2">
-                        <Image
-                          src="/Hooklock-Icon.png"
-                          alt="Hooklock"
-                          width={32}
-                          height={46}
-                          className="object-contain h-[44px] w-auto"
-                        />
-                      </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Suitable for glazed)</span>
-                    </div>
-                    <div className="flex flex-col items-center justify-between min-h-[140px]">
-                      <span className="font-jakarta font-semibold text-[15px] sm:text-[16px] text-[#050B20]">Low</span>
-                      <div className="my-auto py-2">
-                        <Image
-                          src="/Hooklock-Icon.png"
-                          alt="Hooklock"
-                          width={32}
-                          height={46}
-                          className="object-contain h-[44px] w-auto"
-                        />
-                      </div>
-                      <span className="font-manrope text-[12px] sm:text-[13px] text-[#555555] leading-tight">(Suitable for glazed)</span>
+                      <span className="font-manrope text-[12px] sm:text-[13px] text-transparent leading-tight select-none">-</span>
                     </div>
                   </div>
                 </div>

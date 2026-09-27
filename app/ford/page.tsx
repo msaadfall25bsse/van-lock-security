@@ -15,7 +15,7 @@ const fordVehicles = [
   {
     name: 'Connect 2002-2014',
     slug: '/ford/connect-2002-2014/',
-    image: '/fiat-doblo-2010.jpeg',
+    image: '/ford-connect-2002-2014.jpeg',
   },
   {
     name: 'Connect 2014>2024',
