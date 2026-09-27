@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../../Header';
@@ -9,16 +9,16 @@ import Footer from '../../Footer';
 export const metadata: Metadata = {
   title: 'Van Dead Locks - VanLock Security',
   description:
-    'Dead locks are mechanical locks designed to work independently of your vehicle’s existing locking system. Using a straight bolt, typically between 2 and 5 cm in length, they secure the door by engaging with the body of the van.',
+    'Dead locks are mechanical locks designed to work independently of your vehicleâ€™s existing locking system. Using a straight bolt, typically between 2 and 5 cm in length, they secure the door by engaging with the body of the van.',
 };
 
 const keyFeatures = [
-  'Independent Locking System – Not linked to your van’s central locking, making it harder to bypass.',
-  'Straight Bolt Locking Mechanism – Provides robust security by locking directly into the door frame.',
-  'High-Security Key Operation – Operated by a key only, keeping your contents extra safe.',
-  'Fleet Friendly – Can be keyed alike for multi-van fleets.',
-  'Custom Fit Kits – Designed to fit specific van models with minimal structural changes.',
-  'Enhanced Vehicle Integrity – Maintains your van’s body strength and professional appearance.',
+  'Independent Locking System â€“ Not linked to your vanâ€™s central locking, making it harder to bypass.',
+  'Straight Bolt Locking Mechanism â€“ Provides robust security by locking directly into the door frame.',
+  'High-Security Key Operation â€“ Operated by a key only, keeping your contents extra safe.',
+  'Fleet Friendly â€“ Can be keyed alike for multi-van fleets.',
+  'Custom Fit Kits â€“ Designed to fit specific van models with minimal structural changes.',
+  'Enhanced Vehicle Integrity â€“ Maintains your vanâ€™s body strength and professional appearance.',
 ];
 
 const comparisonHeaders = [
@@ -34,51 +34,51 @@ const comparisonHeaders = [
 
 const comparisonRows = [
   {
-    feature: 'Operated independently of your van’s locking system',
-    values: ['✖', '✖', '–', '–', '✖', '✖', '✖'],
+    feature: 'Operated independently of your vanâ€™s locking system',
+    values: ['âœ–', 'âœ–', 'â€“', 'â€“', 'âœ–', 'âœ–', 'âœ–'],
   },
   {
     feature: 'Mechanical, key-operated lock, offering reliable, hands-on security',
-    values: ['✖', '✖', '✖', '✖', '–', '✖', '–'],
+    values: ['âœ–', 'âœ–', 'âœ–', 'âœ–', 'â€“', 'âœ–', 'â€“'],
   },
   {
     feature: 'Automatically secures the door every time it closes',
-    values: ['–', '–', '✖', '✖', '–', '–', '–'],
+    values: ['â€“', 'â€“', 'âœ–', 'âœ–', 'â€“', 'â€“', 'â€“'],
   },
   {
     feature: 'Designed for fast, low-impact installation using van-specific kits',
-    values: ['✖', '✖', '✖', '✖', '✖', '✖', '✖'],
+    values: ['âœ–', 'âœ–', 'âœ–', 'âœ–', 'âœ–', 'âœ–', 'âœ–'],
   },
   {
-    feature: 'Maintains your van’s original appearance',
-    values: ['✖', '✖', '✖', '✖', '–', '✖', '–'],
+    feature: 'Maintains your vanâ€™s original appearance',
+    values: ['âœ–', 'âœ–', 'âœ–', 'âœ–', 'â€“', 'âœ–', 'â€“'],
   },
   {
     feature: 'Ideal for tradespeople, couriers, and fleet operators',
-    values: ['✖', '✖', '✖', '✖', '✖', '✖', '✖'],
+    values: ['âœ–', 'âœ–', 'âœ–', 'âœ–', 'âœ–', 'âœ–', 'âœ–'],
   },
   {
-    feature: 'Custom keying options available — perfect for fleets or multiple vans',
-    values: ['✖', '✖', '✖', '–', '–', '–', '–'],
+    feature: 'Custom keying options available â€” perfect for fleets or multiple vans',
+    values: ['âœ–', 'âœ–', 'âœ–', 'â€“', 'â€“', 'â€“', 'â€“'],
   },
   {
     feature: 'Provides a deterrent, as well as additional physical security',
-    values: ['✖', '✖', '–', '–', '✖', '–', '✖'],
+    values: ['âœ–', 'âœ–', 'â€“', 'â€“', 'âœ–', 'â€“', 'âœ–'],
   },
   {
     feature: 'Gives you passive defence without needing any driver interaction',
-    values: ['–', '–', '–', '–', '–', '–', '✖'],
+    values: ['â€“', 'â€“', 'â€“', 'â€“', 'â€“', 'â€“', 'âœ–'],
   },
 ];
 
 const faqs = [
   {
     q: 'Can I install a Dead Lock myself?',
-    a: 'While it’s possible, we recommend professional installation to ensure maximum security and maintain your vehicle’s warranty.',
+    a: 'While itâ€™s possible, we recommend professional installation to ensure maximum security and maintain your vehicleâ€™s warranty.',
   },
   {
-    q: 'Will the Dead Lock affect my van’s central locking?',
-    a: 'No, Dead Locks work independently and do not interfere with your vehicle’s existing locking system.',
+    q: 'Will the Dead Lock affect my vanâ€™s central locking?',
+    a: 'No, Dead Locks work independently and do not interfere with your vehicleâ€™s existing locking system.',
   },
   {
     q: 'Can multiple vans be keyed alike?',
@@ -118,15 +118,15 @@ export default function VanDeadLocksPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div className="max-w-[560px]">
-              <h2 className="font-onest text-[35px] font-bold text-[#000000] leading-[42px] tracking-[-0.02em] mb-6">
+              <h2 className="font-onest text-[30px] sm:text-[35px] font-semibold text-[#000000] leading-[40px] sm:leading-[45px] tracking-[-0.02em] mb-6">
                 Secure Your Van With Heavy-Duty<br />DeadLocks
               </h2>
               <div className="space-y-4 font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px]">
                 <p>
-                  Dead locks are mechanical locks designed to work independently of your vehicle’s existing locking system. Using a straight bolt, typically between 2 and 5 cm in length, they secure the door by engaging with the body of the van. Only operated by a high-security key, they provide an additional layer of security for your van and its contents. Installation kits are specific to the make and model of van, making them easy to install, and they come with all the parts you need.
+                  Dead locks are mechanical locks designed to work independently of your vehicleâ€™s existing locking system. Using a straight bolt, typically between 2 and 5 cm in length, they secure the door by engaging with the body of the van. Only operated by a high-security key, they provide an additional layer of security for your van and its contents. Installation kits are specific to the make and model of van, making them easy to install, and they come with all the parts you need.
                 </p>
                 <p>
-                  As well as being designed to maintain your vehicle’s appearance, they are intended to be installed with minimal work required. This means less of your vehicle’s structure needs to be removed, helping maintain your vehicle’s strength.
+                  As well as being designed to maintain your vehicleâ€™s appearance, they are intended to be installed with minimal work required. This means less of your vehicleâ€™s structure needs to be removed, helping maintain your vehicleâ€™s strength.
                 </p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function VanDeadLocksPage() {
 
             {/* Right Content */}
             <div className="order-1 lg:order-2 max-w-[580px]">
-              <h2 className="font-onest text-[32px] sm:text-[35px] font-bold text-[#000000] leading-[1.2] mb-5 tracking-tight">
+              <h2 className="font-onest text-[30px] sm:text-[35px] font-semibold text-[#000000] leading-[40px] sm:leading-[45px] mb-5 tracking-tight">
                 Key Features &amp; Benefits
               </h2>
               <p className="font-manrope text-[15px] sm:text-[15.5px] text-[#4a5568] leading-[26px] mb-6">
@@ -187,7 +187,7 @@ export default function VanDeadLocksPage() {
         </div>
       </section>
 
-      {/* Section 3: Call to Action Strip (Protect Your Van — Upgrade Now!) */}
+      {/* Section 3: Call to Action Strip (Protect Your Van â€” Upgrade Now!) */}
       <section
         className="relative overflow-hidden py-[40px] md:py-[70px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
         style={{
@@ -204,10 +204,10 @@ export default function VanDeadLocksPage() {
         <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="w-full md:w-auto text-left">
             <h2 className="font-onest text-white text-[26px] md:text-[40px] font-bold leading-[35px] md:leading-[50px] mb-2 tracking-tight">
-              Protect Your Van — Upgrade Now!
+              Protect Your Van â€” Upgrade Now!
             </h2>
             <p className="font-manrope text-white text-[16px] md:text-[18px] leading-[26px] md:leading-[32px] md:mr-[24%]">
-              Don’t leave your tools and livelihood at risk. Secure your van with our premium Dead Locks.
+              Donâ€™t leave your tools and livelihood at risk. Secure your van with our premium Dead Locks.
             </p>
           </div>
           <div className="flex-shrink-0">
@@ -259,7 +259,7 @@ export default function VanDeadLocksPage() {
                       <td
                         key={cellIdx}
                         className={`py-4 px-4 text-center font-bold border-l border-[#e5e5e5] ${
-                          val === '✖'
+                          val === 'âœ–'
                             ? 'text-[#222222] text-[16px]'
                             : 'text-[#888888] text-[18px]'
                         }`}
@@ -302,3 +302,4 @@ export default function VanDeadLocksPage() {
     </main>
   );
 }
+
