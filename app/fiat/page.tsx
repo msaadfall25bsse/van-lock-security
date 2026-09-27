@@ -119,8 +119,7 @@ export default function FiatPage() {
       {/* Estimate Banner Section */}
       <EstimateBannerSection />
 
-      {/* Testimonials Section */}
-      <TestimonialsSection />
+  
 
       {/* Footer */}
       <Footer />
