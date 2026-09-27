@@ -15,7 +15,7 @@ const maxusVehicles = [
   {
     name: 'V80 2017>',
     slug: '/maxus/v80-2017/',
-    image: '/Fiat-Doblo-2010-5b4ffa43.jpeg',
+    image: '/maxus-v80-2017.png',
   },
   {
     name: 'eDeliver 3',
