@@ -29,11 +29,11 @@ export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
         {/* 2. Column 2: Navigation Menu */}
         <div className="hidden lg:flex flex-initial items-center justify-center">
           <nav className="flex items-center">
-            <ul className="flex items-center whitespace-nowrap text-[15px] font-medium tracking-normal text-[#000000] font-jakarta">
+            <ul className="flex items-center whitespace-nowrap text-[16px] font-medium tracking-normal text-[#000000] font-manrope">
               <li>
                 <Link
                   href="/"
-                  className={`px-3.5 py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
+                  className={`pr-[28px] py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
                     activePath === "/" ? "text-[#2282c6]" : "text-[#000000] hover:text-[#2282c6]"
                   }`}
                 >
@@ -43,7 +43,7 @@ export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
               <li>
                 <Link
                   href="/about-us"
-                  className={`px-3.5 py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
+                  className={`pr-[28px] py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
                     activePath === "/about-us" ? "text-[#2282c6]" : "text-[#000000] hover:text-[#2282c6]"
                   }`}
                 >
@@ -55,7 +55,7 @@ export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
               <li className="relative group py-6">
                 <Link
                   href="/choose-your-van"
-                  className={`px-3.5 py-2 transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap ${
+                  className={`pr-[28px] py-2 transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap ${
                     activePath.startsWith("/ford") || activePath === "/choose-your-van"
                       ? "text-[#2282c6]"
                       : "text-[#000000] group-hover:text-[#2282c6]"
@@ -215,7 +215,7 @@ export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
               <li className="relative group py-6">
                 <Link
                   href="/our-services"
-                  className="px-3.5 py-2 text-[#000000] group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
+                  className="pr-[28px] py-2 text-[#000000] group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
                 >
                   <span>Our Services</span>
                   <svg
@@ -255,7 +255,7 @@ export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
               <li>
                 <Link
                   href="/fleets"
-                  className="px-3.5 py-2 text-[#000000] hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
+                  className="pr-[28px] py-2 text-[#000000] hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
                 >
                   Fleets
                 </Link>
@@ -264,7 +264,7 @@ export default function WhiteHeader({ activePath = "/" }: WhiteHeaderProps) {
               <li>
                 <Link
                   href="/contact"
-                  className="px-3.5 py-2 text-[#000000] hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
+                  className="pr-[28px] py-2 text-[#000000] hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
                 >
                   Contact
                 </Link>

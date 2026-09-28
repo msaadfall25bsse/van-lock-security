@@ -29,11 +29,11 @@ export default function Header({ activePath = "/" }: HeaderProps) {
         {/* 2. Column 2: Navigation Menu */}
         <div className="hidden lg:flex flex-initial items-center justify-center">
           <nav className="flex items-center">
-            <ul className="flex items-center whitespace-nowrap text-[15px] font-medium tracking-normal text-white font-jakarta">
+            <ul className="flex items-center whitespace-nowrap text-[16px] font-medium tracking-normal text-white font-manrope">
               <li>
                 <Link
                   href="/"
-                  className={`px-3.5 py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
+                  className={`pr-[28px] py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
                     activePath === "/" ? "text-[#2282c6]" : "text-white hover:text-[#2282c6]"
                   }`}
                 >
@@ -43,7 +43,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li>
                 <Link
                   href="/about-us"
-                  className={`px-3.5 py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
+                  className={`pr-[28px] py-2 transition-colors duration-150 inline-block whitespace-nowrap ${
                     activePath === "/about-us" ? "text-[#2282c6]" : "text-white hover:text-[#2282c6]"
                   }`}
                 >
@@ -55,7 +55,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li className="relative group py-6">
                 <Link
                   href="/choose-your-van"
-                  className="px-3.5 py-2 text-white group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
+                  className="pr-[28px] py-2 text-white group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
                 >
                   <span>Choose Your Van</span>
                   <svg
@@ -211,7 +211,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li className="relative group py-6">
                 <Link
                   href="/our-services"
-                  className="px-3.5 py-2 text-white group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
+                  className="pr-[28px] py-2 text-white group-hover:text-[#2282c6] transition-colors duration-150 inline-flex items-center gap-1.5 whitespace-nowrap"
                 >
                   <span>Our Services</span>
                   <svg
@@ -251,7 +251,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li>
                 <Link
                   href="/fleets"
-                  className="px-3.5 py-2 text-white hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
+                  className="pr-[28px] py-2 text-white hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
                 >
                   Fleets
                 </Link>
@@ -260,7 +260,7 @@ export default function Header({ activePath = "/" }: HeaderProps) {
               <li>
                 <Link
                   href="/contact"
-                  className="px-3.5 py-2 text-white hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
+                  className="pr-[28px] py-2 text-white hover:text-[#2282c6] transition-colors duration-150 inline-block whitespace-nowrap"
                 >
                   Contact
                 </Link>
