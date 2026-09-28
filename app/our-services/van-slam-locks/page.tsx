@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../../Header';
-import TestimonialsSection from '../../TestimonialsSection';
 import ServiceFaqAccordion from '../ServiceFaqAccordion';
 import Footer from '../../Footer';
 
@@ -619,45 +618,7 @@ export default function VanSlamLocksPage() {
         </div>
       </section>
 
-      {/* Section 3: Call to Action Strip */}
-      <section
-        className="relative overflow-hidden py-[40px] md:py-[70px] px-4 sm:px-6 lg:px-8 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/main-banner-images.jpg')`,
-        }}
-      >
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              'linear-gradient(90deg, rgba(34, 130, 198, 0.92) 0%, rgba(0, 0, 0, 0.87) 100%)',
-          }}
-        />
-        <div className="relative z-10 max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="w-full md:w-auto text-left">
-            <h2 className="font-onest text-white text-[26px] md:text-[40px] font-bold leading-[35px] md:leading-[50px] mb-2 tracking-tight">
-              Lock in a Second. Drive with Confidence
-            </h2>
-            <p className="font-manrope text-white text-[16px] md:text-[18px] leading-[26px] md:leading-[32px] md:mr-[24%]">
-              Equip your vehicle or delivery fleet with reliable, automatic slam locks installed nationwide.
-            </p>
-          </div>
-          <div className="flex-shrink-0">
-            <a
-              href="tel:07446898025"
-              className="inline-flex items-center gap-[9px] bg-[#2282C6] hover:bg-[#1a6ea9] text-white font-onest text-[18px] font-semibold px-[30px] py-[15px] rounded-[5px] shadow-sm transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap"
-            >
-              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" />
-              </svg>
-              <span>+44 07446898025</span>
-            </a>
-          </div>
-        </div>
-      </section>
 
-      {/* Section 4: Testimonials */}
-      <TestimonialsSection />
 
       {/* Section 5: Comparison Table */}
       <section className="bg-white py-[60px] sm:py-[80px] lg:py-[100px] border-b border-[#f0f0f0]">
